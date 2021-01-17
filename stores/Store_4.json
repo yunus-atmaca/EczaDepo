@@ -1,0 +1,971 @@
+{
+  "storeName": "Depo 4",
+  "medicines": [
+    {
+      "name": "Galvus Met",
+      "doses": [
+        {
+          "fullName": "GALVUS MET 50/850 MG 60 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "NOVARTIS SAG.GIDA SAN.TIC.A.S. PH",
+          "atc": "Metformin ve vildagliptin",
+          "activeIngredient": "Metformin,Vildagliptin",
+          "labelPrice": 179.55500767861807,
+          "warehousePrice": 135.12049950608736,
+          "discount": "41.00",
+          "pharmacistProfitRate": "18.76",
+          "isInStock": false
+        },
+        {
+          "fullName": "GALVUS MET 50/1000 MG 60 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "NOVARTIS SAG.GIDA SAN.TIC.A.S. PH",
+          "atc": "Metformin ve vildagliptin",
+          "activeIngredient": "Metformin,Vildagliptin",
+          "labelPrice": 121.08626977939228,
+          "warehousePrice": 88.84125744787788,
+          "discount": "41.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": false
+        }
+      ]
+    },
+    {
+      "name": "Paxera",
+      "doses": [
+        {
+          "fullName": "PAXERA 40 MG 56 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "ALI RAIF ILAC SAN A.S.",
+          "atc": "Paroksetin",
+          "activeIngredient": "Paroksetin",
+          "labelPrice": 86.05187215592164,
+          "warehousePrice": 63.03825393406683,
+          "discount": "28.00",
+          "pharmacistProfitRate": "20.01",
+          "isInStock": false
+        },
+        {
+          "fullName": "PAXERA 40 MG 28 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "ALI RAIF ILAC SAN A.S.",
+          "atc": "Paroksetin",
+          "activeIngredient": "Paroksetin",
+          "labelPrice": 42.90605384706387,
+          "warehousePrice": 31.696356025687713,
+          "discount": "28.00",
+          "pharmacistProfitRate": "20.00",
+          "isInStock": true
+        },
+        {
+          "fullName": "PAXERA 30 MG 56 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "ALI RAIF ILAC SAN A.S.",
+          "atc": "Paroksetin",
+          "activeIngredient": "Paroksetin",
+          "labelPrice": 63.99733945336056,
+          "warehousePrice": 47.8095975516381,
+          "discount": "28.00",
+          "pharmacistProfitRate": "19.99",
+          "isInStock": true
+        },
+        {
+          "fullName": "PAXERA 30 MG 28 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "ALI RAIF ILAC SAN A.S.",
+          "atc": "Paroksetin",
+          "activeIngredient": "Paroksetin",
+          "labelPrice": 32.08055234826546,
+          "warehousePrice": 22.646754017061433,
+          "discount": "28.00",
+          "pharmacistProfitRate": "19.99",
+          "isInStock": false
+        },
+        {
+          "fullName": "PAXERA 20 MG 56 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "ALI RAIF ILAC SAN A.S.",
+          "atc": "Paroksetin",
+          "activeIngredient": "Paroksetin",
+          "labelPrice": 43.335912880749305,
+          "warehousePrice": 31.723870544860702,
+          "discount": "28.00",
+          "pharmacistProfitRate": "20.00",
+          "isInStock": true
+        },
+        {
+          "fullName": "PAXERA 20 MG 28 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "ALI RAIF ILAC SAN A.S.",
+          "atc": "Paroksetin",
+          "activeIngredient": "Paroksetin",
+          "labelPrice": 19.802767831342322,
+          "warehousePrice": 15.757453538339881,
+          "discount": "18.00",
+          "pharmacistProfitRate": "20.01",
+          "isInStock": true
+        },
+        {
+          "fullName": "PAXERA 10 MG 56 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "ALI RAIF ILAC SAN A.S.",
+          "atc": "Paroksetin",
+          "activeIngredient": "Paroksetin",
+          "labelPrice": 21.049324771046514,
+          "warehousePrice": 14.820501794043825,
+          "discount": "18.00",
+          "pharmacistProfitRate": "20.03",
+          "isInStock": false
+        },
+        {
+          "fullName": "PAXERA 10 MG 28 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "ALI RAIF ILAC SAN A.S.",
+          "atc": "Paroksetin",
+          "activeIngredient": "Paroksetin",
+          "labelPrice": 10.51025402104338,
+          "warehousePrice": 7.0600422091742505,
+          "discount": "10.00",
+          "pharmacistProfitRate": "20.06",
+          "isInStock": true
+        }
+      ]
+    },
+    {
+      "name": "Arveles",
+      "doses": [
+        {
+          "fullName": "ARVELES 25 MG 20 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "I.E.ULAGAY ILAC SAN T.A.S.",
+          "atc": "Deksketoprofen",
+          "activeIngredient": "Deksketoprofen",
+          "labelPrice": 12.420398460280447,
+          "warehousePrice": 9.914503176528449,
+          "discount": "10.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": false
+        }
+      ]
+    },
+    {
+      "name": "Janumet",
+      "doses": [
+        {
+          "fullName": "JANUMET 50/850 MG 56 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "MERCK SHARP DOHME ILAC.LTD.STI",
+          "atc": "Metformin ve sitagliptin",
+          "activeIngredient": "Metformin ve sitagliptin",
+          "labelPrice": 157.90143731176084,
+          "warehousePrice": 118.8427308481139,
+          "discount": "41.00",
+          "pharmacistProfitRate": "19.45",
+          "isInStock": true
+        },
+        {
+          "fullName": "JANUMET 50/500 MG 56 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "MERCK SHARP DOHME ILAC.LTD.STI",
+          "atc": "Metformin ve sitagliptin",
+          "activeIngredient": "Metformin ve sitagliptin",
+          "labelPrice": 195.3147156411686,
+          "warehousePrice": 148.3208229769739,
+          "discount": "41.00",
+          "pharmacistProfitRate": "18.38",
+          "isInStock": true
+        },
+        {
+          "fullName": "JANUMET 50/1000 MG 56 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "MERCK SHARP DOHME ILAC.LTD.STI",
+          "atc": "Metformin ve sitagliptin",
+          "activeIngredient": "Metformin ve sitagliptin",
+          "labelPrice": 113.38147220330121,
+          "warehousePrice": 84.34164497747032,
+          "discount": "41.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": true
+        }
+      ]
+    },
+    {
+      "name": "Januvia",
+      "doses": [
+        {
+          "fullName": "JANUVIA 100 MG 28 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "MERCK SHARP DOHME ILAC.LTD.STI",
+          "atc": "Sitagliptin",
+          "activeIngredient": "Sitagliptin",
+          "labelPrice": 114.91087713322011,
+          "warehousePrice": 85.16189230045862,
+          "discount": "41.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": true
+        }
+      ]
+    },
+    {
+      "name": "Delix",
+      "doses": [
+        {
+          "fullName": "DELIX 5 MG 28 TB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "SANOFI SAGLIK URUNLERI LTD.STI.",
+          "atc": "Ramipril",
+          "activeIngredient": "Ramipril",
+          "labelPrice": 15.172948892370599,
+          "warehousePrice": 11.526721989689904,
+          "discount": "10.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": false
+        },
+        {
+          "fullName": "DELIX 2.5 MG 28 TB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "SANOFI SAGLIK URUNLERI LTD.STI.",
+          "atc": "Ramipril",
+          "activeIngredient": "Ramipril",
+          "labelPrice": 8.630022595883762,
+          "warehousePrice": 6.644779150894305,
+          "discount": "0.00",
+          "pharmacistProfitRate": "20.07",
+          "isInStock": true
+        }
+      ]
+    },
+    {
+      "name": "Nexium",
+      "doses": [
+        {
+          "fullName": "NEXIUM 40 MG 28 TB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "ASTRAZENECA ILAC SAN.TIC.LTD.STI",
+          "atc": "Esomeprazol",
+          "activeIngredient": "Esomeprazol",
+          "labelPrice": 28.006653284794695,
+          "warehousePrice": 20.4622916446318,
+          "discount": "46.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": true
+        },
+        {
+          "fullName": "NEXIUM 40 MG 14 TB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "ASTRAZENECA ILAC SAN.TIC.LTD.STI",
+          "atc": "Esomeprazol",
+          "activeIngredient": "Esomeprazol",
+          "labelPrice": 14.135988261331304,
+          "warehousePrice": 9.963360171166823,
+          "discount": "46.00",
+          "pharmacistProfitRate": "19",
+          "isInStock": true
+        },
+        {
+          "fullName": "NEXIUM 20 MG 28 TB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "ASTRAZENECA ILAC SAN.TIC.LTD.STI",
+          "atc": "Esomeprazol",
+          "activeIngredient": "Esomeprazol",
+          "labelPrice": 29.211555260921298,
+          "warehousePrice": 20.976420952835827,
+          "discount": "52.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": false
+        },
+        {
+          "fullName": "NEXIUM 20 MG 14 TB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "ASTRAZENECA ILAC SAN.TIC.LTD.STI",
+          "atc": "Esomeprazol",
+          "activeIngredient": "Esomeprazol",
+          "labelPrice": 14.021160975162012,
+          "warehousePrice": 10.431938964252735,
+          "discount": "55.00",
+          "pharmacistProfitRate": "19",
+          "isInStock": false
+        }
+      ]
+    },
+    {
+      "name": "Panto",
+      "doses": [
+        {
+          "fullName": "PANTOKAIN 100GR",
+          "medicineType": "",
+          "companyName": "GALENIK ECZA VE KIMYEVI MAD. IC VE DIS.SAN.TIC.A.S",
+          "atc": "",
+          "activeIngredient": "",
+          "labelPrice": 460.34801363279377,
+          "warehousePrice": null,
+          "discount": "",
+          "pharmacistProfitRate": "",
+          "isInStock": false
+        },
+        {
+          "fullName": "PANTOKAIN 10 GR GALENIK",
+          "medicineType": "",
+          "companyName": "GALENIK ECZA VE KIMYEVI MAD. IC VE DIS.SAN.TIC.A.S",
+          "atc": "",
+          "activeIngredient": "",
+          "labelPrice": 64.57753312289752,
+          "warehousePrice": null,
+          "discount": "",
+          "pharmacistProfitRate": "",
+          "isInStock": true
+        },
+        {
+          "fullName": "PANTO 40 MG 28 TB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "SANDOZ ILAC SAN.VE TIC.A.S.",
+          "atc": "Pantoprazol",
+          "activeIngredient": "Pantoprazol",
+          "labelPrice": 16.347599611619447,
+          "warehousePrice": 11.771920875998072,
+          "discount": "10.00",
+          "pharmacistProfitRate": "19.97",
+          "isInStock": false
+        },
+        {
+          "fullName": "PANTO 40 MG 14 TB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "SANDOZ ILAC SAN.VE TIC.A.S.",
+          "atc": "Pantoprazol",
+          "activeIngredient": "Pantoprazol",
+          "labelPrice": 9.92816181419687,
+          "warehousePrice": 6.058509461609509,
+          "discount": "0.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": false
+        },
+        {
+          "fullName": "PANTO 20 MG 28 TB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "SANDOZ ILAC SAN.VE TIC.A.S.",
+          "atc": "Pantoprazol",
+          "activeIngredient": "Pantoprazol",
+          "labelPrice": 9.807409764291995,
+          "warehousePrice": 7.105191936839596,
+          "discount": "0.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": false
+        }
+      ]
+    },
+    {
+      "name": "Parol",
+      "doses": [
+        {
+          "fullName": "PAROL 500 MG 30 TB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "GENFAR ILAC VE GIDA SAN.TIC. ITH.IHR.LTD.STI.",
+          "atc": "Parasetamol",
+          "activeIngredient": "Parasetamol",
+          "labelPrice": 7.154537304160381,
+          "warehousePrice": 4.195194371896886,
+          "discount": "0.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": true
+        },
+        {
+          "fullName": "PAROL 500 MG 20 TB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "GENFAR ILAC VE GIDA SAN.TIC. ITH.IHR.LTD.STI.",
+          "atc": "Parasetamol",
+          "activeIngredient": "Parasetamol",
+          "labelPrice": 4.6977008167695855,
+          "warehousePrice": 2.0662322777704922,
+          "discount": "0.00",
+          "pharmacistProfitRate": "20.17",
+          "isInStock": false
+        },
+        {
+          "fullName": "PAROL 120 MG 150 ML SUSP.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "GENFAR ILAC VE GIDA SAN.TIC. ITH.IHR.LTD.STI.",
+          "atc": "Parasetamol",
+          "activeIngredient": "Parasetamol",
+          "labelPrice": 16.46638375503125,
+          "warehousePrice": 11.272715226693819,
+          "discount": "0.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": true
+        },
+        {
+          "fullName": "PAROL 10 MG 12 FLK.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "GENFAR ILAC VE GIDA SAN.TIC. ITH.IHR.LTD.STI.",
+          "atc": "Parasetamol",
+          "activeIngredient": "Parasetamol",
+          "labelPrice": 122.33193412431402,
+          "warehousePrice": 90.28508742304507,
+          "discount": "28.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": true
+        },
+        {
+          "fullName": "PAROL PLUS 250 MG 150 ML SUSP.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "GENFAR ILAC VE GIDA SAN.TIC. ITH.IHR.LTD.STI.",
+          "atc": "Parasetamol",
+          "activeIngredient": "Parasetamol",
+          "labelPrice": 21.599251995077935,
+          "warehousePrice": 15.509554793296562,
+          "discount": "10.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": true
+        },
+        {
+          "fullName": "PAROL PLS 250/50/150 MG 30 TB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "GENFAR ILAC VE GIDA SAN.TIC. ITH.IHR.LTD.STI.",
+          "atc": "Parasetamol",
+          "activeIngredient": "Parasetamol",
+          "labelPrice": 22.947092697555107,
+          "warehousePrice": 17.55428845965235,
+          "discount": "10.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": true
+        }
+      ]
+    },
+    {
+      "name": "Dolven",
+      "doses": [
+        {
+          "fullName": "DOLVEN 600 MG 20 FTB",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "SANOFI SAGLIK URUNLERI LTD.STI.",
+          "atc": "Ibuprofen",
+          "activeIngredient": "Ibuprofen",
+          "labelPrice": 12.512148246687078,
+          "warehousePrice": 9.21366247875729,
+          "discount": "0.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": true
+        },
+        {
+          "fullName": "DOLVEN %5 40 GR JEL",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "SANOFI SAGLIK URUNLERI LTD.STI.",
+          "atc": "Ibuprofen",
+          "activeIngredient": "Ibuprofen",
+          "labelPrice": 6.6867447103570665,
+          "warehousePrice": 3.73696958948389,
+          "discount": "0.00",
+          "pharmacistProfitRate": "19.95",
+          "isInStock": false
+        },
+        {
+          "fullName": "DOLVEN 400 MG 20 FTB",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "SANOFI SAGLIK URUNLERI LTD.STI.",
+          "atc": "Ibuprofen",
+          "activeIngredient": "Ibuprofen",
+          "labelPrice": 7.79882568981542,
+          "warehousePrice": 5.798257372686736,
+          "discount": "4.00",
+          "pharmacistProfitRate": "20.03",
+          "isInStock": false
+        },
+        {
+          "fullName": "DOLVEN 100 MG 100 ML PED SRP.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "SANOFI SAGLIK URUNLERI LTD.STI.",
+          "atc": "Ibuprofen",
+          "activeIngredient": "Ibuprofen",
+          "labelPrice": 10.42565016771418,
+          "warehousePrice": 6.705679227351538,
+          "discount": "0.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": false
+        },
+        {
+          "fullName": "DOLVEN COLD&FLU 200/30 MG 30 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "SANOFI SAGLIK URUNLERI LTD.STI.",
+          "atc": "Ibuprofen",
+          "activeIngredient": "Ibuprofen",
+          "labelPrice": 23.176140372380704,
+          "warehousePrice": 17.086458553539533,
+          "discount": "10.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": true
+        }
+      ]
+    },
+    {
+      "name": "Katarin",
+      "doses": [
+        {
+          "fullName": "KATARIN 30 CAP.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "BIOFARMA ILAC SAN.VE TIC. A.S.",
+          "atc": "DİĞER SOĞUK ALGINLIĞI PREPARATLARI",
+          "activeIngredient": "Oksolamin,Klorfeniramin,Parasetamol",
+          "labelPrice": 6.958742475072102,
+          "warehousePrice": 4.664319420876707,
+          "discount": "0.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": true
+        },
+        {
+          "fullName": "KATARIN PED 100 ML SRP.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "BIOFARMA ILAC SAN.VE TIC. A.S.",
+          "atc": "DİĞER SOĞUK ALGINLIĞI PREPARATLARI",
+          "activeIngredient": "Oksolamin,Klorfeniramin,Parasetamol",
+          "labelPrice": 18.07612416747175,
+          "warehousePrice": 13.523244815745208,
+          "discount": "0.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": false
+        },
+        {
+          "fullName": "KATARIN FORT 20 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "BIOFARMA ILAC SAN.VE TIC. A.S.",
+          "atc": "DİĞER SOĞUK ALGINLIĞI PREPARATLARI",
+          "activeIngredient": "Oksolamin,Klorfeniramin,Parasetamol",
+          "labelPrice": 12.741126250485296,
+          "warehousePrice": 9.717309567106998,
+          "discount": "0.00",
+          "pharmacistProfitRate": "19.98",
+          "isInStock": true
+        }
+      ]
+    },
+    {
+      "name": "Ventolin",
+      "doses": [
+        {
+          "fullName": "VENTOLIN 4 MG 100 TB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "GLAXOSMITHKLINE ILC.SN.TIC. A.S.",
+          "atc": "Salbutamol",
+          "activeIngredient": "Salbutamol",
+          "labelPrice": 23.17343447958149,
+          "warehousePrice": 16.762051337970412,
+          "discount": "10.00",
+          "pharmacistProfitRate": "20.01",
+          "isInStock": false
+        },
+        {
+          "fullName": "VENTOLIN 2 MG 150 ML SRP.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "GLAXOSMITHKLINE ILC.SN.TIC. A.S.",
+          "atc": "Salbutamol",
+          "activeIngredient": "Salbutamol",
+          "labelPrice": 10.97906435320853,
+          "warehousePrice": 8.062207061727658,
+          "discount": "0.00",
+          "pharmacistProfitRate": "20.05",
+          "isInStock": false
+        },
+        {
+          "fullName": "VENTOLIN 100 MCG 200 DOZ INH.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "GLAXOSMITHKLINE ILC.SN.TIC. A.S.",
+          "atc": "Salbutamol",
+          "activeIngredient": "Salbutamol",
+          "labelPrice": 13.283443095867213,
+          "warehousePrice": 9.062156460999393,
+          "discount": "0.00",
+          "pharmacistProfitRate": "20.03",
+          "isInStock": false
+        },
+        {
+          "fullName": "VENTOLIN NEB 2.5 MG 2.5 ML20 FLK.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "GLAXOSMITHKLINE ILC.SN.TIC. A.S.",
+          "atc": "Salbutamol",
+          "activeIngredient": "Salbutamol",
+          "labelPrice": 17.525403303907247,
+          "warehousePrice": 13.694847599725874,
+          "discount": "0.00",
+          "pharmacistProfitRate": "19.99",
+          "isInStock": true
+        }
+      ]
+    },
+    {
+      "name": "Erdostin",
+      "doses": [
+        {
+          "fullName": "ERDOSTIN 300 MG 20 CAP.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "SANDOZ ILAC SAN.VE TIC.A.S.",
+          "atc": "Erdostein",
+          "activeIngredient": "Erdostein",
+          "labelPrice": 22.98793833783674,
+          "warehousePrice": 16.31013368972767,
+          "discount": "18.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": false
+        },
+        {
+          "fullName": "ERDOSTIN 175 MG 200 ML SUSP.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "SANDOZ ILAC SAN.VE TIC.A.S.",
+          "atc": "Erdostein",
+          "activeIngredient": "Erdostein",
+          "labelPrice": 40.71451450997274,
+          "warehousePrice": 29.900093587463505,
+          "discount": "28.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": true
+        },
+        {
+          "fullName": "ERDOSTIN 175 MG 100 ML SUSP.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "SANDOZ ILAC SAN.VE TIC.A.S.",
+          "atc": "Erdostein",
+          "activeIngredient": "Erdostein",
+          "labelPrice": 17.431814446999088,
+          "warehousePrice": 13.164661599402637,
+          "discount": "10.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": true
+        }
+      ]
+    },
+    {
+      "name": "Minoset",
+      "doses": [
+        {
+          "fullName": "MINOSET 500 MG 20 TB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "BAYER TURK KIM.SN.LTD.STI.",
+          "atc": "Parasetamol",
+          "activeIngredient": "Parasetamol",
+          "labelPrice": 3.929844298499506,
+          "warehousePrice": 2.3209127241354945,
+          "discount": "0.00",
+          "pharmacistProfitRate": "20.11",
+          "isInStock": true
+        },
+        {
+          "fullName": "MINOSET 150 MG 100 ML SRP.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "BAYER TURK KIM.SN.LTD.STI.",
+          "atc": "Parasetamol",
+          "activeIngredient": "Parasetamol",
+          "labelPrice": 9.386281741453628,
+          "warehousePrice": 6.965519341896463,
+          "discount": "0.00",
+          "pharmacistProfitRate": "19.96",
+          "isInStock": false
+        },
+        {
+          "fullName": "MINOSET PLS 250/50/150 MG 30 TB",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "BAYER TURK KIM.SN.LTD.STI.",
+          "atc": "Parasetamol",
+          "activeIngredient": "Parasetamol",
+          "labelPrice": 24.02985657042847,
+          "warehousePrice": 16.49943302420052,
+          "discount": "10.00",
+          "pharmacistProfitRate": "19.99",
+          "isInStock": true
+        }
+      ]
+    },
+    {
+      "name": "Novalgin",
+      "doses": [
+        {
+          "fullName": "NOVALGIN 500 MG 20 TB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "SANOFI SAGLIK URUNLERI LTD.STI.",
+          "atc": "Metamizol sodyum",
+          "activeIngredient": "Metamizol sodyum",
+          "labelPrice": 7.344610442295808,
+          "warehousePrice": 5.36546001702925,
+          "discount": "0.00",
+          "pharmacistProfitRate": "19.95",
+          "isInStock": false
+        },
+        {
+          "fullName": "NOVALGIN %5 100 ML SRP.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "SANOFI SAGLIK URUNLERI LTD.STI.",
+          "atc": "Metamizol sodyum",
+          "activeIngredient": "Metamizol sodyum",
+          "labelPrice": 6.457350256174433,
+          "warehousePrice": 5.592009608828799,
+          "discount": "0.00",
+          "pharmacistProfitRate": "19.93",
+          "isInStock": false
+        },
+        {
+          "fullName": "NOVALGIN %5 10 ML GTT.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "SANOFI SAGLIK URUNLERI LTD.STI.",
+          "atc": "Metamizol sodyum",
+          "activeIngredient": "Metamizol sodyum",
+          "labelPrice": 11.665027478509256,
+          "warehousePrice": 8.980438618453965,
+          "discount": "0.00",
+          "pharmacistProfitRate": "19.96",
+          "isInStock": true
+        },
+        {
+          "fullName": "NOVALGIN 1 GR 2 ML 10 AMP.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "SANOFI SAGLIK URUNLERI LTD.STI.",
+          "atc": "Metamizol sodyum",
+          "activeIngredient": "Metamizol sodyum",
+          "labelPrice": 23.387499514494554,
+          "warehousePrice": 17.303158199192858,
+          "discount": "10.00",
+          "pharmacistProfitRate": "20.01",
+          "isInStock": false
+        },
+        {
+          "fullName": "NOVALGIN TOZ 100GR",
+          "medicineType": "",
+          "companyName": "SANOFI SAGLIK URUNLERI LTD.STI.",
+          "atc": "",
+          "activeIngredient": "",
+          "labelPrice": 65.91398940999838,
+          "warehousePrice": null,
+          "discount": "",
+          "pharmacistProfitRate": "",
+          "isInStock": true
+        }
+      ]
+    },
+    {
+      "name": "Benexol",
+      "doses": [
+        {
+          "fullName": "BENEXOL B12 250/250/1 MG 50 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "BAYER TURK KIM.SN.LTD.STI.",
+          "atc": "VİTAMİN B6 VE/VEYA VİTAMİN B12 İLE KOMBİNE VİTAMİN B1",
+          "activeIngredient": "Vitamin B1,Siyanokobalamin (Vitamin B12),Vitamin B6",
+          "labelPrice": 36.95081119437381,
+          "warehousePrice": 26.659236294002795,
+          "discount": "28.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": false
+        },
+        {
+          "fullName": "BENEXOL B12 250/250/1 MG 30 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "BAYER TURK KIM.SN.LTD.STI.",
+          "atc": "VİTAMİN B6 VE/VEYA VİTAMİN B12 İLE KOMBİNE VİTAMİN B1",
+          "activeIngredient": "Vitamin B1,Siyanokobalamin (Vitamin B12),Vitamin B6",
+          "labelPrice": 28.049821234342147,
+          "warehousePrice": 21.27296367291555,
+          "discount": "11.00",
+          "pharmacistProfitRate": "20.02",
+          "isInStock": false
+        }
+      ]
+    },
+    {
+      "name": "Decavit",
+      "doses": [
+        {
+          "fullName": "DECAVIT PRONATAL 60 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "KOCAK FARMA ILAC VE KIMYA SAN. A.S.",
+          "atc": "Kombinasyonlar dahil multivitaminler ve diğer mineraller",
+          "activeIngredient": "Vitamin A,Biotin,Folik asit,Kalsiyum pantotenat,Manganez,Vitamin B1,Vitamin C,Bakır,Vitamin B2,Magnezyum,Kalsiyum,Vitamin E,Vitamin B3,Vitamin B6,Siyanokobalamin (Vitamin B12),Demir,Vitamin D2,Çinko,Fosfor",
+          "labelPrice": 27.296079101612126,
+          "warehousePrice": 19.607270839512918,
+          "discount": "10.00",
+          "pharmacistProfitRate": "20.02",
+          "isInStock": false
+        },
+        {
+          "fullName": "DECAVIT PRONATAL 30 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "KOCAK FARMA ILAC VE KIMYA SAN. A.S.",
+          "atc": "Kombinasyonlar dahil multivitaminler ve diğer mineraller",
+          "activeIngredient": "Vitamin A,Biotin,Folik asit,Kalsiyum pantotenat,Manganez,Vitamin B1,Vitamin C,Bakır,Vitamin B2,Magnezyum,Kalsiyum,Vitamin E,Vitamin B3,Vitamin B6,Siyanokobalamin (Vitamin B12),Demir,Vitamin D2,Çinko,Fosfor",
+          "labelPrice": 15.346809235978537,
+          "warehousePrice": 10.034689574304574,
+          "discount": "0.00",
+          "pharmacistProfitRate": "19.98",
+          "isInStock": true
+        }
+      ]
+    },
+    {
+      "name": "Zinco",
+      "doses": [
+        {
+          "fullName": "ZINCOVER 15 MG 100 ML SRP.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "ILSAN ILAC VE HAMMADDELERI SAN. TIC. A.S.",
+          "atc": "Çinko sülfat",
+          "activeIngredient": "Çinko",
+          "labelPrice": 21.78062563302081,
+          "warehousePrice": 15.558674984212605,
+          "discount": "10.00",
+          "pharmacistProfitRate": "19.99",
+          "isInStock": true
+        },
+        {
+          "fullName": "ZINCOPLEX 30 MG 100 ML FORT SRP.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "ILSAN ILAC VE HAMMADDELERI SAN. TIC. A.S.",
+          "atc": "Çinko sülfat",
+          "activeIngredient": "Çinko",
+          "labelPrice": 24.14530194272426,
+          "warehousePrice": 18.113317530676387,
+          "discount": "10.00",
+          "pharmacistProfitRate": "20.02",
+          "isInStock": false
+        },
+        {
+          "fullName": "ZINCOPLEX 15 MG 100 ML SRP.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "ILSAN ILAC VE HAMMADDELERI SAN. TIC. A.S.",
+          "atc": "Çinko sülfat",
+          "activeIngredient": "Çinko",
+          "labelPrice": 16.36904606721002,
+          "warehousePrice": 11.425663381047585,
+          "discount": "0.00",
+          "pharmacistProfitRate": "19.99",
+          "isInStock": false
+        },
+        {
+          "fullName": "ZINCOMEGA 5 ML 20 KASIK (OYUNCAK ARABA HEDIYELI)",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "ILSAN ILAC VE HAMMADDELERI SAN. TIC. A.S.",
+          "atc": "Çinko sülfat",
+          "activeIngredient": "Çinko",
+          "labelPrice": null,
+          "warehousePrice": null,
+          "discount": "",
+          "pharmacistProfitRate": "",
+          "isInStock": true
+        },
+        {
+          "fullName": "ZINCOMEGA 20X5 KAS. SRP",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "ILSAN ILAC VE HAMMADDELERI SAN. TIC. A.S.",
+          "atc": "Çinko sülfat",
+          "activeIngredient": "Çinko",
+          "labelPrice": null,
+          "warehousePrice": null,
+          "discount": "",
+          "pharmacistProfitRate": "",
+          "isInStock": false
+        },
+        {
+          "fullName": "ZINCOMEGA TEG 100 ML (PEMBE ARABA HEDIYELI)",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "ILSAN ILAC VE HAMMADDELERI SAN. TIC. A.S.",
+          "atc": "Çinko sülfat",
+          "activeIngredient": "Çinko",
+          "labelPrice": null,
+          "warehousePrice": null,
+          "discount": "",
+          "pharmacistProfitRate": "",
+          "isInStock": false
+        },
+        {
+          "fullName": "ZINCOMEGA TEG 100 ML (MAVI ARABA HEDIYELI)",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "ILSAN ILAC VE HAMMADDELERI SAN. TIC. A.S.",
+          "atc": "Çinko sülfat",
+          "activeIngredient": "Çinko",
+          "labelPrice": null,
+          "warehousePrice": null,
+          "discount": "",
+          "pharmacistProfitRate": "",
+          "isInStock": true
+        }
+      ]
+    },
+    {
+      "name": "Oroferon",
+      "doses": [
+        {
+          "fullName": "OROFERON 80 MG 30 DEPO FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "KOCAK FARMA ILAC VE KIMYA SAN. A.S.",
+          "atc": "Ferröz sülfat",
+          "activeIngredient": "Mukoproteoz,Ferröz (demir II) sülfat",
+          "labelPrice": 18.611541367088602,
+          "warehousePrice": 13.682760632208321,
+          "discount": "10.00",
+          "pharmacistProfitRate": "20",
+          "isInStock": true
+        }
+      ]
+    },
+    {
+      "name": "Gyno Ferro sanol",
+      "doses": []
+    },
+    {
+      "name": "Magnezinc",
+      "doses": [
+        {
+          "fullName": "MAGNEZINC 30/300 MG 40 TB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "BERKO ILAC VE KIM. SAN. A.S.",
+          "atc": "DİĞER MİNERAL ÜRÜNLERİ",
+          "activeIngredient": "Çinko,Çinko sülfat,Magnezyum,Magnezyum oksit",
+          "labelPrice": 25.173010233942644,
+          "warehousePrice": 18.284856000890112,
+          "discount": "29.00",
+          "pharmacistProfitRate": "20.04",
+          "isInStock": false
+        }
+      ]
+    },
+    {
+      "name": "İburamin zero",
+      "doses": [
+        {
+          "fullName": "IBURAMIN ZERO 200 MG/2 MG 24 FTB",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "BERKO ILAC VE KIM. SAN. A.S.",
+          "atc": "İbuprofen, kombinasyonları",
+          "activeIngredient": "İbuprofen,Klorfeniramin",
+          "labelPrice": 11.105171751884178,
+          "warehousePrice": 9.150772797689152,
+          "discount": "10.00",
+          "pharmacistProfitRate": "19.94",
+          "isInStock": true
+        },
+        {
+          "fullName": "IBURAMIN ZERO SUSP 100 ML",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "BERKO ILAC VE KIM. SAN. A.S.",
+          "atc": "DİĞER SOĞUK ALGINLIĞI PREPARATLARI",
+          "activeIngredient": "İbuprofen,Klorfeniramin",
+          "labelPrice": 9.696486668039267,
+          "warehousePrice": 5.829860107460002,
+          "discount": "16.00",
+          "pharmacistProfitRate": "19.95",
+          "isInStock": true
+        }
+      ]
+    },
+    {
+      "name": "İbucold c",
+      "doses": [
+        {
+          "fullName": "IBUCOLD C 200/30/300 MG 30 FTB.",
+          "medicineType": "Beseri(KDV%8)",
+          "companyName": "PHARMACTIVE ILAC SAN.VE TIC.A.S.",
+          "atc": "İbuprofen, kombinasyonları",
+          "activeIngredient": "İbuprofen,Psödoefedrin,Vitamin C",
+          "labelPrice": 22.96709585288753,
+          "warehousePrice": 15.870654948360976,
+          "discount": "18.00",
+          "pharmacistProfitRate": "19.99",
+          "isInStock": false
+        }
+      ]
+    }
+  ]
+}

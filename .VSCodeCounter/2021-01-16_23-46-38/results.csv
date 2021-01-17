@@ -1,0 +1,32 @@
+"filename", "language", "JSON", "TypeScript React", "comment", "blank", "total"
+"c:\Users\felix\Desktop\EczaDepo\src\App.tsx", "TypeScript React", 0, 24, 0, 7, 31
+"c:\Users\felix\Desktop\EczaDepo\src\Components\Advertisements.tsx", "TypeScript React", 0, 75, 0, 7, 82
+"c:\Users\felix\Desktop\EczaDepo\src\Components\Companies.tsx", "TypeScript React", 0, 84, 1, 14, 99
+"c:\Users\felix\Desktop\EczaDepo\src\Components\Products.tsx", "TypeScript React", 0, 108, 2, 18, 128
+"c:\Users\felix\Desktop\EczaDepo\src\Components\SearchBox.tsx", "TypeScript React", 0, 56, 0, 8, 64
+"c:\Users\felix\Desktop\EczaDepo\src\Components\Tabbar.tsx", "TypeScript React", 0, 142, 1, 9, 152
+"c:\Users\felix\Desktop\EczaDepo\src\screens\Home\Home.tsx", "TypeScript React", 0, 161, 4, 27, 192
+"c:\Users\felix\Desktop\EczaDepo\src\screens\Home\MedicineDetails\Doses.tsx", "TypeScript React", 0, 180, 2, 8, 190
+"c:\Users\felix\Desktop\EczaDepo\src\screens\Home\MedicineDetails\Information.tsx", "TypeScript React", 0, 105, 0, 9, 114
+"c:\Users\felix\Desktop\EczaDepo\src\screens\Home\MedicineDetails\MedicineDetails.tsx", "TypeScript React", 0, 133, 5, 24, 162
+"c:\Users\felix\Desktop\EczaDepo\src\screens\Home\MedicineDetails\MedicineImg.tsx", "TypeScript React", 0, 60, 1, 5, 66
+"c:\Users\felix\Desktop\EczaDepo\src\screens\Home\MedicineDetails\Price.tsx", "TypeScript React", 0, 89, 4, 8, 101
+"c:\Users\felix\Desktop\EczaDepo\src\screens\Home\MedicineDetails\index.tsx", "TypeScript React", 0, 2, 0, 0, 2
+"c:\Users\felix\Desktop\EczaDepo\src\screens\Home\index.tsx", "TypeScript React", 0, 30, 0, 6, 36
+"c:\Users\felix\Desktop\EczaDepo\src\screens\Login\Login.tsx", "TypeScript React", 0, 111, 0, 9, 120
+"c:\Users\felix\Desktop\EczaDepo\src\screens\Login\Profile.tsx", "TypeScript React", 0, 25, 0, 3, 28
+"c:\Users\felix\Desktop\EczaDepo\src\screens\Login\index.tsx", "TypeScript React", 0, 69, 37, 13, 119
+"c:\Users\felix\Desktop\EczaDepo\src\screens\Main.tsx", "TypeScript React", 0, 39, 0, 11, 50
+"c:\Users\felix\Desktop\EczaDepo\src\screens\ShoppingCart\MedicinesInCart.tsx", "TypeScript React", 0, 175, 2, 7, 184
+"c:\Users\felix\Desktop\EczaDepo\src\screens\ShoppingCart\ShoppingCart.tsx", "TypeScript React", 0, 129, 2, 22, 153
+"c:\Users\felix\Desktop\EczaDepo\src\screens\ShoppingCart\index.tsx", "TypeScript React", 0, 12, 0, 4, 16
+"c:\Users\felix\Desktop\EczaDepo\src\screens\Splash.tsx", "TypeScript React", 0, 62, 0, 7, 69
+"c:\Users\felix\Desktop\EczaDepo\src\utils\bek.json", "JSON", 995, 0, 0, 0, 995
+"c:\Users\felix\Desktop\EczaDepo\src\utils\favorites.json", "JSON", 191, 0, 0, 0, 191
+"c:\Users\felix\Desktop\EczaDepo\src\utils\redux\actionTypes.tsx", "TypeScript React", 0, 3, 0, 0, 3
+"c:\Users\felix\Desktop\EczaDepo\src\utils\redux\actions.tsx", "TypeScript React", 0, 26, 0, 4, 30
+"c:\Users\felix\Desktop\EczaDepo\src\utils\redux\reducers\cart.tsx", "TypeScript React", 0, 48, 5, 3, 56
+"c:\Users\felix\Desktop\EczaDepo\src\utils\redux\reducers\index.tsx", "TypeScript React", 0, 3, 0, 1, 4
+"c:\Users\felix\Desktop\EczaDepo\src\utils\redux\store.tsx", "TypeScript React", 0, 3, 0, 1, 4
+"c:\Users\felix\Desktop\EczaDepo\src\utils\selcuk.json", "JSON", 995, 0, 0, 0, 995
+"Total", "-", 2181, 1954, 66, 235, 4436

@@ -1,0 +1,191 @@
+[
+  {
+    "name": "Galvus Met",
+    "doses": [
+      {
+        "fullName": "GALVUS MET 50/850 MG 60 FTB.",
+        "medicineType": "Beseri(KDV%8)",
+        "companyName": "NOVARTIS SAG.GIDA SAN.TIC.A.S. PH",
+        "atc": "Metformin ve vildagliptin",
+        "activeIngredient": "Metformin,Vildagliptin",
+        "labelPrice": "181.45",
+        "warehousePrice": "136.49",
+        "discount": "41.00",
+        "pharmacistProfitRate": "18.76",
+        "isStock": true
+      },
+      {
+        "fullName": "GALVUS MET 50/1000 MG 60 FTB.",
+        "medicineType": "Beseri(KDV%8)",
+        "companyName": "NOVARTIS SAG.GIDA SAN.TIC.A.S. PH",
+        "atc": "Metformin ve vildagliptin",
+        "activeIngredient": "Metformin,Vildagliptin",
+        "labelPrice": "121.49",
+        "warehousePrice": "89.99",
+        "discount": "41.00",
+        "pharmacistProfitRate": "20",
+        "isStock": false
+      }
+    ],
+    "equivalent": []
+  },
+  {
+    "name": "Paxera",
+    "doses": [
+      {
+        "fullName": "PAXERA 40 MG 56 FTB.",
+        "medicineType": "Beseri(KDV%8)",
+        "companyName": "ALI RAIF ILAC SAN A.S.",
+        "atc": "Paroksetin",
+        "activeIngredient": "Paroksetin",
+        "labelPrice": "86.77",
+        "warehousePrice": "64.27",
+        "discount": "28.00",
+        "pharmacistProfitRate": "20.01",
+        "isStock": true
+      },
+      {
+        "fullName": "PAXERA 40 MG 28 FTB.",
+        "medicineType": "Beseri(KDV%8)",
+        "companyName": "ALI RAIF ILAC SAN A.S.",
+        "atc": "Paroksetin",
+        "activeIngredient": "Paroksetin",
+        "labelPrice": "43.43",
+        "warehousePrice": "32.17",
+        "discount": "28.00",
+        "pharmacistProfitRate": "20.00",
+        "isStock": true
+      },
+      {
+        "fullName": "PAXERA 30 MG 56 FTB.",
+        "medicineType": "Beseri(KDV%8)",
+        "companyName": "ALI RAIF ILAC SAN A.S.",
+        "atc": "Paroksetin",
+        "activeIngredient": "Paroksetin",
+        "labelPrice": "65.20",
+        "warehousePrice": "48.30",
+        "discount": "28.00",
+        "pharmacistProfitRate": "19.99",
+        "isStock": true
+      },
+      {
+        "fullName": "PAXERA 30 MG 28 FTB.",
+        "medicineType": "Beseri(KDV%8)",
+        "companyName": "ALI RAIF ILAC SAN A.S.",
+        "atc": "Paroksetin",
+        "activeIngredient": "Paroksetin",
+        "labelPrice": "32.60",
+        "warehousePrice": "24.15",
+        "discount": "28.00",
+        "pharmacistProfitRate": "19.99",
+        "isStock": true
+      },
+      {
+        "fullName": "PAXERA 20 MG 56 FTB.",
+        "medicineType": "Beseri(KDV%8)",
+        "companyName": "ALI RAIF ILAC SAN A.S.",
+        "atc": "Paroksetin",
+        "activeIngredient": "Paroksetin",
+        "labelPrice": "43.51",
+        "warehousePrice": "32.23",
+        "discount": "28.00",
+        "pharmacistProfitRate": "20.00",
+        "isStock": true
+      },
+      {
+        "fullName": "PAXERA 20 MG 28 FTB.",
+        "medicineType": "Beseri(KDV%8)",
+        "companyName": "ALI RAIF ILAC SAN A.S.",
+        "atc": "Paroksetin",
+        "activeIngredient": "Paroksetin",
+        "labelPrice": "21.71",
+        "warehousePrice": "16.08",
+        "discount": "18.00",
+        "pharmacistProfitRate": "20.01",
+        "isStock": true
+      },
+      {
+        "fullName": "PAXERA 10 MG 56 FTB.",
+        "medicineType": "Beseri(KDV%8)",
+        "companyName": "ALI RAIF ILAC SAN A.S.",
+        "atc": "Paroksetin",
+        "activeIngredient": "Paroksetin",
+        "labelPrice": "21.81",
+        "warehousePrice": "16.15",
+        "discount": "18.00",
+        "pharmacistProfitRate": "20.03",
+        "isStock": true
+      },
+      {
+        "fullName": "PAXERA 10 MG 28 FTB.",
+        "medicineType": "Beseri(KDV%8)",
+        "companyName": "ALI RAIF ILAC SAN A.S.",
+        "atc": "Paroksetin",
+        "activeIngredient": "Paroksetin",
+        "labelPrice": "10.93",
+        "warehousePrice": "8.09",
+        "discount": "10.00",
+        "pharmacistProfitRate": "20.06",
+        "isStock": true
+      }
+    ]
+  },
+  {
+    "name": "Arveles",
+    "doses": [
+      {
+        "fullName": "ARVELES 25 MG 20 FTB.",
+        "medicineType": "Beseri(KDV%8)",
+        "companyName": "I.E.ULAGAY ILAC SAN T.A.S.",
+        "atc": "Deksketoprofen",
+        "activeIngredient": "Deksketoprofen",
+        "labelPrice": "14.27",
+        "warehousePrice": "10.57",
+        "discount": "10.00",
+        "pharmacistProfitRate": "20",
+        "isStock": true
+      }
+    ]
+  },
+  {
+    "name": "Janumet",
+    "doses": [
+      {
+        "fullName": "JANUMET 50/850 MG 56 FTB.",
+        "medicineType": "Beseri(KDV%8)",
+        "companyName": "MERCK SHARP DOHME ILAC.LTD.STI",
+        "atc": "Metformin ve sitagliptin",
+        "activeIngredient": "Metformin ve sitagliptin",
+        "labelPrice": "159.39",
+        "warehousePrice": "118.88",
+        "discount": "41.00",
+        "pharmacistProfitRate": "19.45",
+        "isStock": true
+      },
+      {
+        "fullName": "JANUMET 50/500 MG 56 FTB.",
+        "medicineType": "Beseri(KDV%8)",
+        "companyName": "MERCK SHARP DOHME ILAC.LTD.STI",
+        "atc": "Metformin ve sitagliptin",
+        "activeIngredient": "Metformin ve sitagliptin",
+        "labelPrice": "196.69",
+        "warehousePrice": "148.65",
+        "discount": "41.00",
+        "pharmacistProfitRate": "18.38",
+        "isStock": true
+      },
+      {
+        "fullName": "JANUMET 50/1000 MG 56 FTB.",
+        "medicineType": "Beseri(KDV%8)",
+        "companyName": "MERCK SHARP DOHME ILAC.LTD.STI",
+        "atc": "Metformin ve sitagliptin",
+        "activeIngredient": "Metformin ve sitagliptin",
+        "labelPrice": "114.99",
+        "warehousePrice": "85.18",
+        "discount": "41.00",
+        "pharmacistProfitRate": "20",
+        "isStock": false
+      }
+    ]
+  }
+]
