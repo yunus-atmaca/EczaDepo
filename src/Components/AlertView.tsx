@@ -96,7 +96,7 @@ class AlertView extends React.Component<AlertViewProps, AlertViewState> {
                       <View style={{
                         height: 44,
                         width: 128,
-                        backgroundColor: Color.primaryColor,
+                        backgroundColor: Color.error,
                         borderRadius: 22,
                         alignItems: 'center',
                         justifyContent: 'center',

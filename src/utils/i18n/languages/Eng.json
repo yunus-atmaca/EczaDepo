@@ -22,5 +22,7 @@
   "prod_out_of_stock": "The product you have selected is out of stock!",
   "cart": "Cart",
   "amount_to_be_paid": "Amount to be paid",
-  "order": "Order"
+  "order": "Order",
+  "you_are_about_to_delete_item": "You are about to delete medicine!",
+  "delete": "Delete"
 }

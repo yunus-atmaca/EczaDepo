@@ -22,5 +22,7 @@
   "prod_out_of_stock": "Seçmiş olduğunuz ürün stokta değil!",
   "cart": "Sepetim",
   "amount_to_be_paid": "Ödenecek Tutar",
-  "order": "Şipariş ver"
+  "order": "Şipariş ver",
+  "you_are_about_to_delete_item": "İlacı silmek üzeresin!",
+  "delete": "Sil"
 }

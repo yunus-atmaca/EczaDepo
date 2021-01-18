@@ -13,9 +13,9 @@ import i18n from '../../utils/i18n'
 
 interface MedicinesInCartProps {
   item: any
-  onIncrease: (piece, medicine) => void
-  onDecrease: (piece, medicine) => void
-  onDelete: (piece) => void
+  onIncrease: (piece, item) => void
+  onDecrease: (piece, item) => void
+  onDelete: (item) => void
 }
 
 const { width, height } = Dimensions.get('window')
@@ -117,7 +117,7 @@ function medicinesInCart({ item, onIncrease, onDecrease, onDelete }: MedicinesIn
             justifyContent: 'center'
           }}>
             <TouchableOpacity onPress={() => {
-
+              onDelete(item)
             }}>
               <View style={{
                 height: 32,
@@ -151,6 +151,9 @@ function medicinesInCart({ item, onIncrease, onDecrease, onDelete }: MedicinesIn
               setPiece(tempPiece)
               //console.debug(parseFloat(item.dose.labelPrice))
               setPrice((tempPiece * parseFloat(dose.labelPrice.toString())).toFixed(2))
+
+              if (tempPiece !== 1)
+                onDecrease(tempPiece, item)
             }}>
               <View style={{
                 height: 32,
@@ -181,6 +184,7 @@ function medicinesInCart({ item, onIncrease, onDecrease, onDelete }: MedicinesIn
               setPiece(tempPiece)
               //console.debug(parseFloat(item.dose.labelPrice))
               setPrice((tempPiece * parseFloat(dose.labelPrice.toString())).toFixed(2))
+              onIncrease(tempPiece, item)
             }}>
               <View style={{
                 height: 32,

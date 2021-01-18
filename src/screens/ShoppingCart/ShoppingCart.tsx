@@ -12,6 +12,7 @@ import { connect } from 'react-redux';
 import { addProdToCart, deleteProdFromCart, updateProdFromCart } from '../../utils/redux/actions';
 import { Color } from '../../utils/Color'
 import i18n from '../../utils/i18n'
+import Alert from '../../utils/Alert'
 
 import MedicinesInCart from './MedicinesInCart'
 
@@ -25,30 +26,48 @@ class ShoppingCart extends React.Component<any, any> {
 
     this.medicines = this.props.medicines;
     //console.debug(this.medicines)
+    this.state = {
+      alert: null
+    }
   }
 
   _orderSummary = () => {
     console.debug(this.props.medicines)
   }
 
-  _update = () => {
-    this.props.updateProdFromCart(this.props.medicines[0].medicineId, {
-      piece: 123,
-      store: 'Yunus',
-      dose: '12312312312321'
+  _updateMedicine = (item, piece) => {
+    this.props.updateProdFromCart(item.id, {
+      piece: piece,
+      store: item.cartItem.storeName,
+      dose: item.cartItem.dose
     })
   }
 
-  _onIncrease = (piece, medicine) => {
-
+  _onIncrease = (piece, item) => {
+    this._updateMedicine(item, piece)
   }
 
-  _onDecrease = (piece, medicine) => {
+  _onDecrease = (piece, item) => {
+    /*if (piece === 1) {
+      this._onDelete(item)
+      return
+    }*/
 
+    this._updateMedicine(item, piece)
   }
 
-  _onDelete = (medicine) => {
-
+  _onDelete = (item) => {
+    //console.debug(item)
+    this.setState(Alert({
+      title: i18n.get().warning,
+      message: i18n.get().you_are_about_to_delete_item,
+      onClose: () => { this.setState({ alert: null }) },
+      ok: () => {
+        this.props.deleteProdFromCart(item.id)
+      },
+      okText: i18n.get().delete,
+      cancel: () => { /* Ignore */ }
+    }))
   }
 
   render() {
@@ -168,6 +187,9 @@ class ShoppingCart extends React.Component<any, any> {
                 </TouchableOpacity>
               </View>
             )
+        }
+        {
+          this.state.alert && this.state.alert
         }
       </View>
     )
