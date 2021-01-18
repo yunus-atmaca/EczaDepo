@@ -23,7 +23,7 @@ function information({ medicine }: InformationProps) {
         color: 'black',
         marginBottom: 12
       }}>
-        {i18n.get().information}
+        {i18n.get().product_detail}
       </Text>
       <View style={{
         flexDirection: 'row',
