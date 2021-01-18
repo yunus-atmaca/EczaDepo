@@ -4,6 +4,8 @@ import {
   Text
 } from 'react-native'
 
+import i18n from '../../../utils/i18n'
+
 interface InformationProps {
   medicine: any
 }
@@ -21,7 +23,7 @@ function information({ medicine }: InformationProps) {
         color: 'black',
         marginBottom: 12
       }}>
-        Açıklama
+        {i18n.get().information}
       </Text>
       <View style={{
         flexDirection: 'row',
@@ -32,8 +34,8 @@ function information({ medicine }: InformationProps) {
           fontSize: 13,
           fontWeight: "700",
         }}>
-          Şirket Adı:
-      </Text>
+          {i18n.get().company_name + ':'}
+        </Text>
         <Text style={{
           color: 'black',
           fontSize: 11,
@@ -53,8 +55,8 @@ function information({ medicine }: InformationProps) {
           fontSize: 13,
           fontWeight: "700",
         }}>
-          İlaç Tipi:
-      </Text>
+          {i18n.get().type_of_medicine + ':'}
+        </Text>
         <Text style={{
           color: 'black',
           fontSize: 11,
@@ -74,8 +76,8 @@ function information({ medicine }: InformationProps) {
           fontSize: 13,
           fontWeight: "700",
         }}>
-          ATC:
-      </Text>
+          {i18n.get().atc + ':'}
+        </Text>
         <Text style={{
           color: 'black',
           fontSize: 11,
@@ -95,8 +97,8 @@ function information({ medicine }: InformationProps) {
           fontSize: 13,
           fontWeight: "700",
         }}>
-          Etkin Madde:
-      </Text>
+          {i18n.get().active_ingredient + ':'}
+        </Text>
         <Text style={{
           color: 'black',
           fontSize: 11,

@@ -24,6 +24,7 @@ import { Color } from '../../utils/Color'
 const { width, height } = Dimensions.get('window')
 
 const favorites = require('../../utils/favorites.json')
+import i18n from '../../utils/i18n'
 
 class Home extends React.Component<any, any> {
 
@@ -178,7 +179,7 @@ class Home extends React.Component<any, any> {
                   fontSize: 18,
                   color: 'black'
                 }}
-                placeholder={'İlaç ara...'}
+                placeholder={i18n.get().search_medicine}
                 onChangeText={this._onChangeText}
               />
               <TouchableOpacity
@@ -200,8 +201,8 @@ class Home extends React.Component<any, any> {
             </View>
 
             <Advertisements />
-            <Companies header={'Şirketler'} stores={this.storeNames} />
-            <Products header={'Beğendiklerin'} products={favorites} />
+            <Companies header={i18n.get().companies} stores={this.storeNames} />
+            <Products header={i18n.get().youLiked} products={favorites} />
 
           </ScrollView>
           {

@@ -8,6 +8,7 @@ import { Transition, Transitioning } from 'react-native-reanimated';
 import { Store, Medicine, Dose } from '../../../utils/Stores'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 import { Color } from '../../../utils/Color'
+import i18n from '../../../utils/i18n'
 
 interface DosesAndStoresProps {
   stores: Store[]
@@ -65,7 +66,7 @@ class DosesAndStores extends React.Component<DosesAndStoresProps, any> {
                 <Text style={{
                   fontSize: 14,
                   color: Color.colorOnPrimary,
-                }}>Satıcı</Text>
+                }}>{i18n.get().seller}</Text>
                 <Text style={{
                   fontSize: 16,
                   marginStart: 8,
@@ -186,7 +187,7 @@ class DosesAndStores extends React.Component<DosesAndStoresProps, any> {
                                   color: Color.error,
                                   lineHeight: 28,
                                 }}>
-                                Stokta yok
+                                {i18n.get().out_of_stock}
                               </Text>
                             )
                           }

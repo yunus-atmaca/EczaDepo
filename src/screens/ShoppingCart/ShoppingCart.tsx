@@ -11,6 +11,7 @@ import { connect } from 'react-redux';
 
 import { addProdToCart, deleteProdFromCart, updateProdFromCart } from '../../utils/redux/actions';
 import { Color } from '../../utils/Color'
+import i18n from '../../utils/i18n'
 
 import MedicinesInCart from './MedicinesInCart'
 
@@ -80,7 +81,7 @@ class ShoppingCart extends React.Component<any, any> {
                   fontSize: 28,
                   marginTop: 24
                 }}>
-                  Sepetin şu an boş
+                  {i18n.get().empty_cart}
                 </Text>
               </View>
             )
@@ -100,7 +101,7 @@ class ShoppingCart extends React.Component<any, any> {
                     fontSize: 32,
                     color: 'black'
                   }}>
-                    Sepetim
+                    {i18n.get().cart}
                   </Text>
                 </View>
                 <ScrollView
@@ -143,7 +144,7 @@ class ShoppingCart extends React.Component<any, any> {
                         color: 'white',
                         fontSize: 11,
                       }}>
-                        ÖDENECEK TUTAR
+                        {i18n.get().amount_to_be_paid}
                       </Text>
                       <Text style={{
                         color: 'white',
@@ -161,7 +162,7 @@ class ShoppingCart extends React.Component<any, any> {
                       fontSize: 20,
                       color: 'white',
                     }}>
-                      Şipariş Ver
+                      {i18n.get().order}
                     </Text>
                   </View>
                 </TouchableOpacity>

@@ -9,6 +9,7 @@ import {
 } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 import { Color } from '../../utils/Color'
+import i18n from '../../utils/i18n'
 
 const { width, height } = Dimensions.get('window')
 
@@ -58,7 +59,7 @@ class Login extends React.Component<any, any> {
             marginTop: 56
           }}>
             <TextInput
-              placeholder={'Kullanıcı Adı'}
+              placeholder={i18n.get().username}
               style={{
                 height: '100%',
                 width: '100%',
@@ -79,7 +80,7 @@ class Login extends React.Component<any, any> {
             borderRadius: 8,
           }}>
             <TextInput
-              placeholder={'Şifre'}
+              placeholder={i18n.get().password}
               style={{
                 height: '100%',
                 width: '100%',
@@ -104,14 +105,11 @@ class Login extends React.Component<any, any> {
                 fontSize: 18,
                 fontWeight: 'bold'
               }}>
-                Login
-            </Text>
+                {i18n.get().login}
+              </Text>
             </View>
           </TouchableOpacity>
         </View>
-        <Text>
-          Login
-        </Text>
       </View>
     )
   }

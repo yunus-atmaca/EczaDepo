@@ -19,6 +19,7 @@ import { addProdToCart, deleteProdFromCart, updateProdFromCart } from '../../../
 import Alert from '../../../utils/Alert'
 import { Store, Dose } from '../../../utils/Stores'
 import { Color } from '../../../utils/Color'
+import i18n from '../../../utils/i18n'
 
 const { width, height } = Dimensions.get('window')
 
@@ -70,8 +71,8 @@ class MedicineDetails extends React.Component<any, any> {
 
     if (!this.selectedStore.medicines[0].doses[this.selectedDoseIndex].isInStock) {
       this.setState(Alert({
-        title: 'Uyarı',
-        message: 'Seçmiş olduğunuz ürün stokta değil!',
+        title: i18n.get().warning,
+        message: i18n.get().prod_out_of_stock,
         onClose: () => { this.setState({ alert: null }) },
       }))
 
@@ -117,8 +118,8 @@ class MedicineDetails extends React.Component<any, any> {
     this.selectedDoseIndex = 0
 
     this.setState(Alert({
-      title: 'Bilgi',
-      message: 'Ürün sepetinize eklendi.',
+      title: i18n.get().info,
+      message: i18n.get().prod_added_to_cart,
       onClose: () => { this.setState({ alert: null }) },
       ok: () => {
         this.setState({
@@ -181,7 +182,7 @@ class MedicineDetails extends React.Component<any, any> {
               color: 'white',
 
             }}>
-              Sepete Ekle
+              {i18n.get().add_to_cart}
             </Text>
           </View>
         </TouchableOpacity>

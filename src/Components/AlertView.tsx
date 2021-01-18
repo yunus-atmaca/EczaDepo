@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Text, Dimensions, TouchableOpacity } from 'react-native'
 import Modal from 'react-native-modal';
 import { Color } from '../utils/Color';
+import i18n from '../utils/i18n'
 
 interface AlertViewProps {
   title: string,
@@ -47,7 +48,7 @@ class AlertView extends React.Component<AlertViewProps, AlertViewState> {
         <Modal
           isVisible={this.state.isVisible}
           onModalHide={() => {
-            this.props.onClose()
+            onClose()
           }}>
           <View style={{
             width: Dimensions.get('window').width - 32,
@@ -108,7 +109,7 @@ class AlertView extends React.Component<AlertViewProps, AlertViewState> {
                           fontFamily: 'SFProText-Medium',
                           textAlign: 'center'
                         }}>
-                          {cancelText || 'CANCEL'}
+                          {cancelText || i18n.get().cancel}
                         </Text>
                       </View>
                     </TouchableOpacity>
@@ -134,7 +135,7 @@ class AlertView extends React.Component<AlertViewProps, AlertViewState> {
                       fontFamily: 'SFProText-Medium',
                       textAlign: 'center'
                     }}>
-                      {okText || 'OK'}
+                      {okText || i18n.get().ok}
                     </Text>
                   </View>
                 </TouchableOpacity>

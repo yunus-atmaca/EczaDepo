@@ -9,6 +9,7 @@ import {
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import { CartItem } from '../../utils/CartItem'
 import { Color } from '../../utils/Color'
+import i18n from '../../utils/i18n'
 
 interface MedicinesInCartProps {
   item: any
@@ -96,8 +97,8 @@ function medicinesInCart({ item, onIncrease, onDecrease, onDelete }: MedicinesIn
                 fontSize: 16,
                 color: Color.gray,
               }}>
-                Satıcı
-          </Text>
+                {i18n.get().seller}
+              </Text>
               <Text
                 numberOfLines={1}
                 ellipsizeMode={'tail'}

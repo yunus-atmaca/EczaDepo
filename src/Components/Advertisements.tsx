@@ -22,6 +22,7 @@ const arr = [
   ,
   'Reklam 5'
 ]
+
 class Advertisements extends React.Component<AdvertisementsProps, any> {
 
   _renderAdvertisement = ({ item }) => {

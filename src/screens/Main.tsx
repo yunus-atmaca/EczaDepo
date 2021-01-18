@@ -17,10 +17,14 @@ import Login from './Login'
 
 import { connect } from 'react-redux';
 
+import i18n from '../utils/i18n'
+
 class Main extends React.Component<any, any> {
 
   constructor(props) {
     super(props)
+
+    i18n.init('Tr')
   }
 
   render() {
