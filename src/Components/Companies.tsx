@@ -3,16 +3,18 @@ import {
   View,
   Text,
   Dimensions,
-  Image
+  Image,
+  TouchableOpacity
 } from 'react-native'
-import { FlatList } from 'react-native-gesture-handler'
+import { FlatList, } from 'react-native-gesture-handler'
 import { Color } from '../utils/Color'
 
 const { width, height } = Dimensions.get('window')
 
 interface CompaniesProps {
   header: string
-  stores: string[]
+  stores: string[],
+  onStoreClicked: (store) => void
 }
 
 interface CompanyProps {
@@ -31,25 +33,29 @@ class Companies extends React.Component<CompaniesProps, any> {
   _renderCompany = ({ item }) => {
     //console.debug(item)
     return (
-      <View style={{
-        height: 72,
-        paddingHorizontal: 16,
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: 'white',
-        marginHorizontal: 8,
-        borderRadius: 12,
-        borderWidth: 1,
-        borderColor: Color.primaryColor
+      <TouchableOpacity onPress={() => {
+        this.props.onStoreClicked(item)
       }}>
-        <Text style={{
-          color: 'black',
-          fontSize: 20,
-          fontWeight: 'bold'
+        <View style={{
+          height: 72,
+          paddingHorizontal: 16,
+          alignItems: 'center',
+          justifyContent: 'center',
+          backgroundColor: 'white',
+          marginHorizontal: 8,
+          borderRadius: 12,
+          borderWidth: 1,
+          borderColor: Color.primaryColor
         }}>
-          {item}
-        </Text>
-      </View>
+          <Text style={{
+            color: 'black',
+            fontSize: 20,
+            fontWeight: 'bold'
+          }}>
+            {item}
+          </Text>
+        </View>
+      </TouchableOpacity>
     )
   }
 

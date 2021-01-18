@@ -124,6 +124,24 @@ class Home extends React.Component<any, any> {
     return availableStores;
   }
 
+  _onStoreClicked = (storeName) => {
+    let selectedStore: Store | null = null;
+
+    stores.forEach(store => {
+      if (store.storeName === storeName) {
+        selectedStore = store
+      }
+    })
+
+    if (selectedStore) {
+      this.props.navigation.navigate('StoreMedicines', {
+        store: selectedStore,
+      })
+    } else {
+      //There is no store named <storeName>
+    }
+  }
+
   render() {
     return (
       <View style={{
@@ -201,7 +219,11 @@ class Home extends React.Component<any, any> {
             </View>
 
             <Advertisements />
-            <Companies header={i18n.get().companies} stores={this.storeNames} />
+            <Companies
+              header={i18n.get().companies}
+              stores={this.storeNames}
+              onStoreClicked={this._onStoreClicked}
+            />
             <Products header={i18n.get().youLiked} products={favorites} />
 
           </ScrollView>

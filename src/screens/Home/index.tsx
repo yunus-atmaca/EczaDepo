@@ -4,13 +4,14 @@ import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 
 import Home from './Home'
 import MedicineDetails from './MedicineDetails'
+import StoreMedicines from './StoreMedicines'
 
 const Stack = createStackNavigator();
 function index({ navigation, route }) {
 
   useEffect(() => {
     const routeName = getFocusedRouteNameFromRoute(route);
-    if (routeName === 'MedicineDetails') {
+    if (routeName !== 'Home') {
       navigation.setOptions({ tabBarVisible: false })
     } else {
       navigation.setOptions({ tabBarVisible: true })
@@ -27,6 +28,10 @@ function index({ navigation, route }) {
       <Stack.Screen
         name="MedicineDetails"
         component={MedicineDetails}
+      />
+      <Stack.Screen
+        name="StoreMedicines"
+        component={StoreMedicines}
       />
     </Stack.Navigator>
   )

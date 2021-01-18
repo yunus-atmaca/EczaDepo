@@ -41,6 +41,11 @@ class Login extends React.Component<any, any> {
           opacity: 0.8,
           alignItems: 'center',
           justifyContent: 'center'
+        }]} />
+        <View style={[StyleSheet.absoluteFill, {
+          backgroundColor: 'transparent',
+          alignItems: 'center',
+          justifyContent: 'center'
         }]}>
           <Text style={{
             fontSize: 42,
