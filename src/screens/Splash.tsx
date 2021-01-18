@@ -7,7 +7,7 @@ import {
 } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { CommonActions } from '@react-navigation/native';
-
+import { Color } from '../utils/Color'
 const { width, height } = Dimensions.get('window')
 
 function Splash({ navigation }) {
@@ -42,14 +42,14 @@ function Splash({ navigation }) {
       }}>
         <Text style={{
           fontSize: 64,
-          color: '#a30801',
+          color: Color.primaryColor,
           fontWeight: 'bold'
         }}>
           Ecza
         </Text>
         <Text style={{
           fontSize: 32,
-          color: '#87c43d',
+          color: Color.colorPrimaryVariant,
         }}>
           Depo
         </Text>

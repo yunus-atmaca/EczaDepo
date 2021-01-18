@@ -8,6 +8,7 @@ import {
 } from 'react-native'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import { CartItem } from '../../utils/CartItem'
+import { Color } from '../../utils/Color'
 
 interface MedicinesInCartProps {
   item: any
@@ -43,10 +44,10 @@ function medicinesInCart({ item, onIncrease, onDecrease, onDelete }: MedicinesIn
       height: 144,
       width: width - 36,
       marginHorizontal: 18,
-      backgroundColor: '#e8ecf1',
+      backgroundColor: 'white',
       flexDirection: 'row',
       borderRadius: 18,
-      shadowColor: "#000",
+      shadowColor: "black",
       shadowOffset: {
         width: 0,
         height: 2,
@@ -72,35 +73,61 @@ function medicinesInCart({ item, onIncrease, onDecrease, onDelete }: MedicinesIn
         flex: 5,
         padding: 8
       }}>
-        <Text
-          numberOfLines={1}
-          ellipsizeMode={'tail'}
-          style={{
-            fontSize: 18,
-            color: 'black',
-          }}>
-          {dose.fullName}
-        </Text>
         <View style={{
-          flexDirection: 'row',
-          alignItems: 'center'
+          flexDirection: 'row'
         }}>
-          <Text style={{
-            fontSize: 16,
-            color: 'gray',
+          <View style={{
+            flex: 5,
           }}>
-            Satıcı
-          </Text>
-          <Text
-            numberOfLines={1}
-            ellipsizeMode={'tail'}
-            style={{
-              marginStart: 8,
-              fontSize: 16,
-              color: 'gray',
+            <Text
+              numberOfLines={1}
+              ellipsizeMode={'tail'}
+              style={{
+                fontSize: 18,
+                color: 'black',
+              }}>
+              {dose.fullName}
+            </Text>
+            <View style={{
+              flexDirection: 'row',
+              alignItems: 'center'
             }}>
-            {cartItem.storeName}
+              <Text style={{
+                fontSize: 16,
+                color: Color.gray,
+              }}>
+                Satıcı
           </Text>
+              <Text
+                numberOfLines={1}
+                ellipsizeMode={'tail'}
+                style={{
+                  marginStart: 8,
+                  fontSize: 16,
+                  color: Color.gray,
+                }}>
+                {cartItem.storeName}
+              </Text>
+            </View>
+          </View>
+          <View style={{
+            flex: 1,
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}>
+            <TouchableOpacity onPress={() => {
+
+            }}>
+              <View style={{
+                height: 32,
+                width: 32,
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}>
+                <MaterialCommunityIcons name={'trash-can-outline'} color={'black'} size={24} />
+              </View>
+            </TouchableOpacity>
+          </View>
         </View>
         <View style={{
           justifyContent: 'space-between',
@@ -118,47 +145,24 @@ function medicinesInCart({ item, onIncrease, onDecrease, onDelete }: MedicinesIn
           <View style={{
             flexDirection: 'row'
           }}>
-            {
-              piece === 1 ?
-                (
-                  <TouchableOpacity onPress={() => {
-
-                  }}>
-                    <View style={{
-                      height: 32,
-                      width: 32,
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      borderWidth: 1,
-                      borderRadius: 8,
-                      borderColor: '#f23d06'
-                    }}>
-                      <MaterialCommunityIcons name={'trash-can-outline'} color={'black'} size={18} />
-                    </View>
-                  </TouchableOpacity>
-                )
-                :
-                (
-                  <TouchableOpacity onPress={() => {
-                    let tempPiece = piece === 1 ? 1 : (piece - 1)
-                    setPiece(tempPiece)
-                    //console.debug(parseFloat(item.dose.labelPrice))
-                    setPrice((tempPiece * parseFloat(dose.labelPrice.toString())).toFixed(2))
-                  }}>
-                    <View style={{
-                      height: 32,
-                      width: 32,
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      borderWidth: 1,
-                      borderRadius: 8,
-                      borderColor: '#f23d06'
-                    }}>
-                      <MaterialCommunityIcons name={'minus'} color={'black'} size={18} />
-                    </View>
-                  </TouchableOpacity>
-                )
-            }
+            <TouchableOpacity onPress={() => {
+              let tempPiece = piece === 1 ? 1 : (piece - 1)
+              setPiece(tempPiece)
+              //console.debug(parseFloat(item.dose.labelPrice))
+              setPrice((tempPiece * parseFloat(dose.labelPrice.toString())).toFixed(2))
+            }}>
+              <View style={{
+                height: 32,
+                width: 32,
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderWidth: 1,
+                borderRadius: 8,
+                borderColor: Color.primaryColor
+              }}>
+                <MaterialCommunityIcons name={'minus'} color={'black'} size={18} />
+              </View>
+            </TouchableOpacity>
             <View style={{
               width: 48,
               justifyContent: 'center',
@@ -184,7 +188,7 @@ function medicinesInCart({ item, onIncrease, onDecrease, onDelete }: MedicinesIn
                 justifyContent: 'center',
                 borderWidth: 1,
                 borderRadius: 8,
-                borderColor: '#f23d06'
+                borderColor: Color.primaryColor
               }}>
                 <MaterialCommunityIcons name={'plus'} color={'black'} size={18} />
               </View>

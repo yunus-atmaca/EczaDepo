@@ -19,6 +19,7 @@ import Advertisements from '../../Components/Advertisements'
 import OverlaySpinner from '../../Components/OverlaySpinner'
 
 import { stores, Store, Medicine, Dose } from '../../utils/Stores'
+import { Color } from '../../utils/Color'
 
 const { width, height } = Dimensions.get('window')
 
@@ -156,7 +157,7 @@ class Home extends React.Component<any, any> {
               marginHorizontal: 12,
               marginTop: 24,
               borderRadius: 12,
-              borderColor: '#f23d06',
+              borderColor: Color.primaryColor,
               borderWidth: 1,
               flexDirection: 'row'
             }}>
@@ -166,7 +167,7 @@ class Home extends React.Component<any, any> {
                 alignItems: 'center',
                 justifyContent: 'center'
               }}>
-                <Ionicons name={'search'} size={32} color={'#a30801'} />
+                <Ionicons name={'search'} size={32} color={Color.primaryColor} />
               </View>
               <TextInput
                 ref={(ref) => { this.textInputRef = ref }}

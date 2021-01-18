@@ -7,9 +7,11 @@ import {
   Image
 } from 'react-native'
 import { ScrollView } from 'react-native-gesture-handler';
-
 import { connect } from 'react-redux';
+
 import { addProdToCart, deleteProdFromCart, updateProdFromCart } from '../../utils/redux/actions';
+import { Color } from '../../utils/Color'
+
 import MedicinesInCart from './MedicinesInCart'
 
 const { width, height } = Dimensions.get('window')
@@ -55,7 +57,7 @@ class ShoppingCart extends React.Component<any, any> {
     return (
       <View style={{
         flex: 1,
-        backgroundColor: 'white',
+        backgroundColor: Color.lightGray,
       }}>
         {
           this.medicines.length === 0 ?
@@ -126,11 +128,11 @@ class ShoppingCart extends React.Component<any, any> {
                   <View style={{
                     height: 64,
                     width: width,
-                    backgroundColor: '#87c43d',
+                    backgroundColor: Color.colorPrimaryVariant,
                     justifyContent: 'space-between',
                     alignItems: 'center',
                     borderTopWidth: 1,
-                    borderTopColor: 'gray',
+                    borderTopColor: Color.gray,
                     flexDirection: 'row',
                     paddingHorizontal: 24
                   }}>

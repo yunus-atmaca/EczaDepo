@@ -5,6 +5,7 @@ import {
   StyleSheet,
   ActivityIndicator
 } from 'react-native'
+import { Color } from '../utils/Color'
 
 interface SpinnerProps {
   spinner: boolean,
@@ -25,7 +26,7 @@ function spinner({ spinner, text }: SpinnerProps) {
     }]}>
       <ActivityIndicator
         size="large"
-        color="#f23d06"
+        color={Color.primaryColor}
       />
       {
         text && (

@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Text, Dimensions, TouchableOpacity } from 'react-native'
 import Modal from 'react-native-modal';
+import { Color } from '../utils/Color';
 
 interface AlertViewProps {
   title: string,
@@ -94,7 +95,7 @@ class AlertView extends React.Component<AlertViewProps, AlertViewState> {
                       <View style={{
                         height: 44,
                         width: 128,
-                        backgroundColor: '#FF0000',
+                        backgroundColor: Color.primaryColor,
                         borderRadius: 22,
                         alignItems: 'center',
                         justifyContent: 'center',
@@ -120,7 +121,7 @@ class AlertView extends React.Component<AlertViewProps, AlertViewState> {
                   <View style={{
                     height: 44,
                     width: 128,
-                    backgroundColor: '#FF9900',
+                    backgroundColor: Color.colorPrimaryVariant,
                     borderRadius: 22,
                     alignItems: 'center',
                     justifyContent: 'center',

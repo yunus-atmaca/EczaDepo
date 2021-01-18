@@ -8,9 +8,9 @@ import {
   TextInput
 } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler'
+import { Color } from '../../utils/Color'
 
 const { width, height } = Dimensions.get('window')
-
 
 class Login extends React.Component<any, any> {
 
@@ -43,7 +43,7 @@ class Login extends React.Component<any, any> {
         }]}>
           <Text style={{
             fontSize: 42,
-            color: '#a30801',
+            color: Color.primaryColor,
             fontWeight: 'bold'
           }}>
             Ecza Depo
@@ -53,7 +53,7 @@ class Login extends React.Component<any, any> {
             width: width - 72,
             marginHorizontal: 36,
             borderWidth: 1,
-            borderColor: '#f23d06',
+            borderColor: Color.primaryColor,
             borderRadius: 8,
             marginTop: 56
           }}>
@@ -75,7 +75,7 @@ class Login extends React.Component<any, any> {
             marginHorizontal: 36,
             borderWidth: 1,
             marginTop: 18,
-            borderColor: '#f23d06',
+            borderColor: Color.primaryColor,
             borderRadius: 8,
           }}>
             <TextInput
@@ -94,7 +94,7 @@ class Login extends React.Component<any, any> {
               marginTop: 36,
               height: 48,
               width: 144,
-              backgroundColor: '#a30801',
+              backgroundColor: Color.colorPrimaryVariant,
               alignItems: 'center',
               justifyContent: 'center',
               borderRadius: 12,

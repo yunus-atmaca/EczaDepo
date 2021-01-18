@@ -44,7 +44,6 @@ class Products extends React.Component<ProductsProps, any> {
         height: '100%',
         width: 144,
         borderRadius: 4,
-        //backgroundColor: '#f23d06',
         backgroundColor: 'white',
         marginHorizontal: 4,
         paddingVertical: 4

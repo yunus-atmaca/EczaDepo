@@ -7,6 +7,7 @@ import {
 import { Transition, Transitioning } from 'react-native-reanimated';
 import { Store, Medicine, Dose } from '../../../utils/Stores'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
+import { Color } from '../../../utils/Color'
 
 interface DosesAndStoresProps {
   stores: Store[]
@@ -63,7 +64,7 @@ class DosesAndStores extends React.Component<DosesAndStoresProps, any> {
               <View style={{ flexDirection: 'row' }}>
                 <Text style={{
                   fontSize: 14,
-                  color: 'gray',
+                  color: Color.colorOnPrimary,
                 }}>Satıcı</Text>
                 <Text style={{
                   fontSize: 16,
@@ -74,7 +75,7 @@ class DosesAndStores extends React.Component<DosesAndStoresProps, any> {
               <MaterialIcons name={'keyboard-arrow-down'} color='black' size={28} />
             </View>
             <View style={{
-              backgroundColor: '#bfbfbf',
+              backgroundColor: Color.colorOnPrimary,
               height: 1,
               width: '100%',
               marginTop: 4
@@ -137,12 +138,12 @@ class DosesAndStores extends React.Component<DosesAndStoresProps, any> {
                 fontSize: 18,
                 textTransform: 'uppercase',
                 backgroundColor: 'white',
-                color: this.state.selectedDoses[this.state.selectedDoseIndex].isInStock ? 'black' : 'red'
+                color: this.state.selectedDoses[this.state.selectedDoseIndex].isInStock ? 'black' : Color.error
               }}>{this.state.selectedDoses[this.state.selectedDoseIndex].fullName}</Text>
               <MaterialIcons name={'keyboard-arrow-down'} color='black' size={28} />
             </View>
             <View style={{
-              backgroundColor: '#bfbfbf',
+              backgroundColor: Color.colorOnPrimary,
               height: 1,
               width: '100%',
               marginTop: 4
@@ -171,7 +172,7 @@ class DosesAndStores extends React.Component<DosesAndStoresProps, any> {
                             ellipsizeMode={'tail'}
                             style={{
                               fontSize: 18,
-                              color: dose.isInStock ? 'black' : 'red',
+                              color: dose.isInStock ? 'black' : Color.error,
                               lineHeight: 28,
                             }}>
                             {dose.fullName}
@@ -182,7 +183,7 @@ class DosesAndStores extends React.Component<DosesAndStoresProps, any> {
                                 ellipsizeMode={'tail'}
                                 style={{
                                   fontSize: 11,
-                                  color: 'red',
+                                  color: Color.error,
                                   lineHeight: 28,
                                 }}>
                                 Stokta yok
