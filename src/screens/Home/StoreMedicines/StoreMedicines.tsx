@@ -12,38 +12,59 @@ import { Medicine, Store } from '../../../utils/Stores'
 
 import Header from './Header'
 import SearchBar from '../../../Components/SearchBar'
+import BottomSheetMedicine from '../../../Components/BottomSheetMedicine'
 
 class StoreMedicines extends React.Component<any, any> {
 
   store: Store
   medicineNames: string[]
+  medicineImages: number[]
+  selectedMedicine: Medicine
+
   constructor(props) {
     super(props)
 
     this.store = this.props.route.params.store
     this.medicineNames = []
+    this.medicineImages = []
     this.store.medicines.forEach(medicine => {
-      if (!this.medicineNames.includes(medicine.name) && medicine.name !== undefined)
+      if (!this.medicineNames.includes(medicine.name) && medicine.name !== undefined) {
         this.medicineNames.push(medicine.name)
+        this.medicineImages.push(Math.floor(Math.random() * 3 + 1))
+      }
     })
 
     this.state = {
-      storeMedicines: this.store.medicines
+      storeMedicines: this.store.medicines,
+      showMedicineDetail: false
     }
+
+    this.selectedMedicine = this.store.medicines[0]
 
     //console.debug(this.store)
   }
 
-  _getImg = () => {
-    let random = Math.floor(Math.random() * 3 + 1)
-
-    if (random == 1) {
+  _getImg = (index) => {
+    if (index == 1) {
       return require('../../../../assets/img/p1.png')
-    } else if (random == 2) {
+    } else if (index == 2) {
       return require('../../../../assets/img/p2.png')
-    } else if (random == 3) {
+    } else if (index == 3) {
       return require('../../../../assets/img/p3.png')
     }
+  }
+
+  _getMedicineImgIndex = (name): number => {
+    this.store.medicines.forEach((medicine, index) => {
+      //console.debug(this.medicineImages[index])
+      if (medicine.name === name) {
+        console.debug(name + ' | ' + medicine.name + ' | ' + this.medicineImages[index])
+
+        return this.medicineImages[index]
+      }
+    })
+
+    return this.medicineImages[0]
   }
 
   _renderMedicines = ({ item }) => {
@@ -80,7 +101,8 @@ class StoreMedicines extends React.Component<any, any> {
       }}>
         <TouchableOpacity activeOpacity={0.7}
           onPress={() => {
-
+            this.selectedMedicine = item
+            this.setState({ showMedicineDetail: true })
           }}>
           <View style={{
             flex: 1,
@@ -92,7 +114,7 @@ class StoreMedicines extends React.Component<any, any> {
               alignItems: 'center',
               justifyContent: 'center',
             }}>
-              <Image source={this._getImg()} />
+              <Image source={this._getImg(this._getMedicineImgIndex(item.name))} />
             </View>
             <View style={{
               flex: 1,
@@ -175,6 +197,17 @@ class StoreMedicines extends React.Component<any, any> {
           onEndReached={this._onEndReached}
           onEndReachedThreshold={0.5}
         />
+        {
+          this.state.showMedicineDetail && (
+            <BottomSheetMedicine
+              storeName={this.store.storeName}
+              medicine={this.selectedMedicine}
+              onClose={() => {
+                this.setState({ showMedicineDetail: false })
+              }}
+            />
+          )
+        }
       </View>
     )
   }

@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native'
 import { FlatList, } from 'react-native-gesture-handler'
-import { PRIMARY_COLOR } from '../utils/Color'
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 
 const { width, height } = Dimensions.get('window')
 
@@ -30,7 +30,22 @@ class Companies extends React.Component<CompaniesProps, any> {
     return this.props.stores !== nextProps.stores
   }
 
-  _renderCompany = ({ item }) => {
+  _getColor = (index: number) => {
+    switch (index) {
+      case 0:
+        return 'rgb(255, 150, 10)'
+      case 1:
+        return 'rgb(9, 171, 29)'
+      case 2:
+        return 'rgb(80, 155, 246)'
+      case 3:
+        return 'rgb(255, 233, 0)'
+      case 4:
+        return 'rgb(40, 211, 255)'
+    }
+  }
+
+  _renderCompany = ({ item, index }) => {
     //console.debug(item)
     return (
       <TouchableOpacity onPress={() => {
@@ -41,16 +56,14 @@ class Companies extends React.Component<CompaniesProps, any> {
           paddingHorizontal: 16,
           alignItems: 'center',
           justifyContent: 'center',
-          backgroundColor: 'white',
+          backgroundColor: this._getColor(index),
           marginHorizontal: 8,
-          borderRadius: 12,
-          borderWidth: 1,
-          borderColor: PRIMARY_COLOR
+          borderRadius: 8,
         }}>
+          <MaterialCommunityIcons name={'store'} size={32} color={'white'} />
           <Text style={{
             color: 'black',
-            fontSize: 20,
-            fontWeight: 'bold'
+            fontSize: 16,
           }}>
             {item}
           </Text>
