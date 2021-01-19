@@ -24,5 +24,6 @@
   "amount_to_be_paid": "Ödenecek Tutar",
   "order": "Şipariş ver",
   "you_are_about_to_delete_item": "İlacı silmek üzeresin!",
-  "delete": "Sil"
+  "delete": "Sil",
+  "search_in": "içinde ilaç ara..."
 }

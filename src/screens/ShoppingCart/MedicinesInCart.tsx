@@ -8,7 +8,7 @@ import {
 } from 'react-native'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import { CartItem } from '../../utils/CartItem'
-import { Color } from '../../utils/Color'
+import { PRIMARY_COLOR, GRAY } from '../../utils/Color'
 import i18n from '../../utils/i18n'
 
 interface MedicinesInCartProps {
@@ -95,7 +95,7 @@ function medicinesInCart({ item, onIncrease, onDecrease, onDelete }: MedicinesIn
             }}>
               <Text style={{
                 fontSize: 16,
-                color: Color.gray,
+                color: GRAY,
               }}>
                 {i18n.get().seller}
               </Text>
@@ -105,7 +105,7 @@ function medicinesInCart({ item, onIncrease, onDecrease, onDelete }: MedicinesIn
                 style={{
                   marginStart: 8,
                   fontSize: 16,
-                  color: Color.gray,
+                  color: GRAY,
                 }}>
                 {cartItem.storeName}
               </Text>
@@ -162,7 +162,7 @@ function medicinesInCart({ item, onIncrease, onDecrease, onDelete }: MedicinesIn
                 justifyContent: 'center',
                 borderWidth: 1,
                 borderRadius: 8,
-                borderColor: Color.primaryColor
+                borderColor: PRIMARY_COLOR
               }}>
                 <MaterialCommunityIcons name={'minus'} color={'black'} size={18} />
               </View>
@@ -193,7 +193,7 @@ function medicinesInCart({ item, onIncrease, onDecrease, onDelete }: MedicinesIn
                 justifyContent: 'center',
                 borderWidth: 1,
                 borderRadius: 8,
-                borderColor: Color.primaryColor
+                borderColor: PRIMARY_COLOR
               }}>
                 <MaterialCommunityIcons name={'plus'} color={'black'} size={18} />
               </View>

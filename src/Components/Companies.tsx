@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native'
 import { FlatList, } from 'react-native-gesture-handler'
-import { Color } from '../utils/Color'
+import { PRIMARY_COLOR } from '../utils/Color'
 
 const { width, height } = Dimensions.get('window')
 
@@ -45,7 +45,7 @@ class Companies extends React.Component<CompaniesProps, any> {
           marginHorizontal: 8,
           borderRadius: 12,
           borderWidth: 1,
-          borderColor: Color.primaryColor
+          borderColor: PRIMARY_COLOR
         }}>
           <Text style={{
             color: 'black',

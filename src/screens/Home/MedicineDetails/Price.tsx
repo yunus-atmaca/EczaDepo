@@ -5,7 +5,7 @@ import {
   TouchableOpacity
 } from 'react-native'
 import { Store, Dose } from '../../../utils/Stores'
-import { Color } from '../../../utils/Color'
+import { COLOR_ON_PRIMARY } from '../../../utils/Color'
 
 interface PriceProps {
   doseIndex: number,
@@ -62,7 +62,7 @@ function price({ doseIndex, store, onPieceSelected }: PriceProps) {
             justifyContent: 'center',
             borderWidth: 1,
             borderRadius: 8,
-            borderColor: Color.colorOnPrimary
+            borderColor: COLOR_ON_PRIMARY
           }}>
             <MaterialCommunityIcons name={'minus'} color={'black'} size={18} />
           </View>
@@ -92,7 +92,7 @@ function price({ doseIndex, store, onPieceSelected }: PriceProps) {
             justifyContent: 'center',
             borderWidth: 1,
             borderRadius: 8,
-            borderColor: Color.colorOnPrimary
+            borderColor: COLOR_ON_PRIMARY
           }}>
             <MaterialCommunityIcons name={'plus'} color={'black'} size={18} />
           </View>

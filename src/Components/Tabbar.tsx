@@ -9,7 +9,7 @@ import {
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
-import { Color } from '../utils/Color'
+import { PRIMARY_COLOR, COLOR_ON_PRIMARY } from '../utils/Color'
 
 export default function Tabbar({ state, descriptors, navigation, badge }) {
   const focusedOptions = descriptors[state.routes[state.index].key].options;
@@ -27,7 +27,7 @@ export default function Tabbar({ state, descriptors, navigation, badge }) {
       bottom: 12,
       flexDirection: 'row',
       width: Dimensions.get('window').width - 48,
-      backgroundColor: Color.primaryColor,
+      backgroundColor: PRIMARY_COLOR,
       height: 48,
       alignItems: 'center',
       justifyContent: 'center',
@@ -70,7 +70,7 @@ export default function Tabbar({ state, descriptors, navigation, badge }) {
               <View>
                 <Ionicons name={'home'}
                   size={isFocused ? 28 : 24}
-                  color={isFocused ? 'white' : Color.colorOnPrimary} />
+                  color={isFocused ? 'white' : COLOR_ON_PRIMARY} />
               </View>
             )
           } else if (label === 'ShoppingCart') {
@@ -79,7 +79,7 @@ export default function Tabbar({ state, descriptors, navigation, badge }) {
                 <View style={{
                   height: 68,
                   width: 68,
-                  backgroundColor: Color.primaryColor,
+                  backgroundColor: PRIMARY_COLOR,
                   borderWidth: 1,
                   borderColor: 'white',
                   alignItems: 'center',
@@ -88,7 +88,7 @@ export default function Tabbar({ state, descriptors, navigation, badge }) {
                 }}>
                   <MaterialIcons name={'shopping-cart'}
                     size={isFocused ? 28 : 24}
-                    color={isFocused ? 'white' : Color.colorOnPrimary} />
+                    color={isFocused ? 'white' : COLOR_ON_PRIMARY} />
                   {
                     badge > 0 && (
                       <View style={{
@@ -98,18 +98,18 @@ export default function Tabbar({ state, descriptors, navigation, badge }) {
                         height: 14,
                         width: 14,
                         borderRadius: 7,
-                        backgroundColor: isFocused ? 'white' : Color.colorOnPrimary,
+                        backgroundColor: isFocused ? 'white' : COLOR_ON_PRIMARY,
                         justifyContent: 'center',
                         alignItems: 'center'
                       }}>
                         {
                           badge > 9 ?
                             (
-                              <Text style={{ color: Color.primaryColor, fontSize: 11 }}>9+</Text>
+                              <Text style={{ color: PRIMARY_COLOR, fontSize: 11 }}>9+</Text>
                             )
                             :
                             (
-                              <Text style={{ color: Color.primaryColor, fontSize: 11 }}>{badge}</Text>
+                              <Text style={{ color: PRIMARY_COLOR, fontSize: 11 }}>{badge}</Text>
                             )
                         }
                       </View>
@@ -124,7 +124,7 @@ export default function Tabbar({ state, descriptors, navigation, badge }) {
                 <MaterialCommunityIcons
                   name={'login'}
                   size={isFocused ? 28 : 24}
-                  color={isFocused ? 'white' : Color.colorOnPrimary} />
+                  color={isFocused ? 'white' : COLOR_ON_PRIMARY} />
               </View>
             )
           }

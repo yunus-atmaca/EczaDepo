@@ -24,5 +24,6 @@
   "amount_to_be_paid": "Amount to be paid",
   "order": "Order",
   "you_are_about_to_delete_item": "You are about to delete medicine!",
-  "delete": "Delete"
+  "delete": "Delete",
+  "search_in": "search medicine in"
 }

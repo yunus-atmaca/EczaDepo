@@ -11,10 +11,11 @@ function index({ navigation, route }) {
 
   useEffect(() => {
     const routeName = getFocusedRouteNameFromRoute(route);
-    if (routeName !== 'Home') {
-      navigation.setOptions({ tabBarVisible: false })
-    } else {
+    console.debug(routeName)
+    if (routeName === 'Home' || routeName === undefined) {
       navigation.setOptions({ tabBarVisible: true })
+    } else {
+      navigation.setOptions({ tabBarVisible: false })
     }
   });
 

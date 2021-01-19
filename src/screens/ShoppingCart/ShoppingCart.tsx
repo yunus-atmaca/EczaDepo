@@ -10,7 +10,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 import { connect } from 'react-redux';
 
 import { addProdToCart, deleteProdFromCart, updateProdFromCart } from '../../utils/redux/actions';
-import { Color } from '../../utils/Color'
+import { GRAY, LIGHT_GRAY, COLOR_PRIMARY_VARIANT } from '../../utils/Color'
 import i18n from '../../utils/i18n'
 import Alert from '../../utils/Alert'
 
@@ -77,7 +77,7 @@ class ShoppingCart extends React.Component<any, any> {
     return (
       <View style={{
         flex: 1,
-        backgroundColor: Color.lightGray,
+        backgroundColor: LIGHT_GRAY,
       }}>
         {
           this.medicines.length === 0 ?
@@ -148,11 +148,11 @@ class ShoppingCart extends React.Component<any, any> {
                   <View style={{
                     height: 64,
                     width: width,
-                    backgroundColor: Color.colorPrimaryVariant,
+                    backgroundColor: COLOR_PRIMARY_VARIANT,
                     justifyContent: 'space-between',
                     alignItems: 'center',
                     borderTopWidth: 1,
-                    borderTopColor: Color.gray,
+                    borderTopColor: GRAY,
                     flexDirection: 'row',
                     paddingHorizontal: 24
                   }}>

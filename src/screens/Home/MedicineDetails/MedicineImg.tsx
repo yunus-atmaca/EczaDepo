@@ -6,7 +6,7 @@ import {
 
 } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons'
-import { Color } from '../../../utils/Color'
+import { PRIMARY_COLOR } from '../../../utils/Color'
 
 interface medicineImgProps {
   onBack: () => void
@@ -51,7 +51,7 @@ function medicineImg({ onBack, onLike, like }: medicineImgProps) {
         {
           like ?
             (
-              <Ionicons name={'heart'} size={32} color={Color.primaryColor} />
+              <Ionicons name={'heart'} size={32} color={PRIMARY_COLOR} />
             )
             :
             (

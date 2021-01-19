@@ -8,18 +8,28 @@ import {
 } from 'react-native'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 
-import { Color } from '../../../utils/Color'
-import { Store } from '../../../utils/Stores'
+import { Medicine, Store } from '../../../utils/Stores'
 
 import Header from './Header'
+import SearchBar from '../../../Components/SearchBar'
 
 class StoreMedicines extends React.Component<any, any> {
 
   store: Store
+  medicineNames: string[]
   constructor(props) {
     super(props)
 
     this.store = this.props.route.params.store
+    this.medicineNames = []
+    this.store.medicines.forEach(medicine => {
+      if (!this.medicineNames.includes(medicine.name) && medicine.name !== undefined)
+        this.medicineNames.push(medicine.name)
+    })
+
+    this.state = {
+      storeMedicines: this.store.medicines
+    }
 
     //console.debug(this.store)
   }
@@ -128,16 +138,37 @@ class StoreMedicines extends React.Component<any, any> {
 
   }
 
+  _onSearchResult = (res: string[]) => {
+    let searchedMedicines: Medicine[] = []
+
+    this.store.medicines.forEach(medicine => {
+      res.forEach(name => {
+        if (medicine.name && medicine.name === name) {
+          searchedMedicines.push(medicine)
+        }
+      })
+    })
+
+    this.setState({ storeMedicines: searchedMedicines })
+  }
+
   render() {
     return (
       <View style={{
         flex: 1,
-        backgroundColor: Color.lightGray
+        backgroundColor: 'white'
       }}>
         <Header title={this.store.storeName} onBack={() => this.props.navigation.goBack()} />
+        <SearchBar
+          store={this.store.storeName}
+          navigatedFrom={'StoreMedicines'}
+          medicines={this.medicineNames}
+          onSearchResult={this._onSearchResult}
+          onCancel={() => { this.setState({ storeMedicines: this.store.medicines }) }}
+        />
         <FlatList
           showsVerticalScrollIndicator={false}
-          data={this._formatData(this.store.medicines)}
+          data={this._formatData(this.state.storeMedicines)}
           renderItem={this._renderMedicines}
           keyExtractor={(item, index) => index.toString()}
           numColumns={2}

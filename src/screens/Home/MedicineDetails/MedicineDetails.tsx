@@ -18,7 +18,7 @@ import { connect } from 'react-redux';
 import { addProdToCart, deleteProdFromCart, updateProdFromCart } from '../../../utils/redux/actions';
 import Alert from '../../../utils/Alert'
 import { Store, Dose } from '../../../utils/Stores'
-import { Color } from '../../../utils/Color'
+import { COLOR_PRIMARY_VARIANT, COLOR_ON_PRIMARY } from '../../../utils/Color'
 import i18n from '../../../utils/i18n'
 
 const { width, height } = Dimensions.get('window')
@@ -154,7 +154,7 @@ class MedicineDetails extends React.Component<any, any> {
             onPieceSelected={this._onPieceSelected}
           />
           <View style={{
-            backgroundColor: Color.colorOnPrimary,
+            backgroundColor: COLOR_ON_PRIMARY,
             height: 1,
             marginHorizontal: 18,
             width: width - 36,
@@ -171,7 +171,7 @@ class MedicineDetails extends React.Component<any, any> {
           <View style={{
             height: 56,
             width: width - 48,
-            backgroundColor: Color.colorPrimaryVariant,
+            backgroundColor: COLOR_PRIMARY_VARIANT,
             justifyContent: 'center',
             alignItems: 'center',
             marginHorizontal: 24,

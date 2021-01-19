@@ -7,7 +7,7 @@ import {
 } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 
-import { Color } from '../../../utils/Color'
+import { COLOR_PRIMARY_VARIANT } from '../../../utils/Color'
 
 interface HeaderProps {
   title: string
@@ -20,11 +20,12 @@ function header({ title, onBack }: HeaderProps) {
 
   return (
     <View style={{
-      backgroundColor: Color.primaryColor,
+      backgroundColor: COLOR_PRIMARY_VARIANT,
       width: width,
       height: 56,
-      alignItems: 'center',
-      justifyContent: 'center'
+      //alignItems: 'center',
+      justifyContent: 'center',
+      paddingStart: 40
     }}>
       <Text style={{
         color: 'white',

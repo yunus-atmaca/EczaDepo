@@ -9,7 +9,7 @@ import {
 import { FlatList, TouchableOpacity } from 'react-native-gesture-handler'
 
 interface SearchBoxProps {
-  medicines: []
+  medicines: string[]
   onMedicineClick: (medicine: string) => void
 }
 
@@ -41,15 +41,15 @@ function searchBox({ medicines, onMedicineClick }: SearchBoxProps) {
   }
 
   return (
-    <View style={[StyleSheet.absoluteFill, {
+    <View style={{
       marginHorizontal: 12,
-      marginTop: 84,
+      marginTop: 12,
       borderRadius: 8,
       backgroundColor: 'white',
       height: medicines.length * 52,
       maxHeight: 256,
       width: Dimensions.get('window').width - 24
-    }]}>
+    }}>
       <FlatList
         data={medicines}
         renderItem={_renderItem}
