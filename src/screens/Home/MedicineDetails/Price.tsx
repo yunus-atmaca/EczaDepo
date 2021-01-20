@@ -37,7 +37,7 @@ function price({ doseIndex, store, onPieceSelected }: PriceProps) {
       paddingHorizontal: 18,
       justifyContent: 'space-between',
       flexDirection: 'row',
-      alignItems: 'center'
+      alignItems: 'center',
     }}>
       <View>
         <Text style={{

@@ -1,6 +1,9 @@
 import React from 'react'
 import {
-  Dimensions, View
+  Dimensions,
+  View,
+  Text,
+  Image
 } from 'react-native'
 import BottomSheet from 'reanimated-bottom-sheet'
 
@@ -13,6 +16,7 @@ interface BottomSheetMedicineProps {
   onClose: () => void
   medicine: Medicine
   storeName: string
+  img: any
 }
 
 class BottomSheetMedicine extends React.Component<BottomSheetMedicineProps, any> {
@@ -21,7 +25,7 @@ class BottomSheetMedicine extends React.Component<BottomSheetMedicineProps, any>
   constructor(props) {
     super(props)
 
-    console.debug(this.props.medicine)
+    //console.debug(this.props.medicine)
   }
 
   componentDidMount() {
@@ -37,6 +41,7 @@ class BottomSheetMedicine extends React.Component<BottomSheetMedicineProps, any>
         backgroundColor: LIGHT_GRAY,
         borderTopStartRadius: 12,
         borderTopEndRadius: 12,
+
       }}>
         <View style={{
           width: width,
@@ -44,7 +49,7 @@ class BottomSheetMedicine extends React.Component<BottomSheetMedicineProps, any>
           alignItems: 'center',
           justifyContent: 'center',
           borderBottomWidth: 1,
-          borderBottomColor: GRAY
+          borderBottomColor: PRIMARY_COLOR
         }}>
           <View style={{
             height: 3,
@@ -52,7 +57,25 @@ class BottomSheetMedicine extends React.Component<BottomSheetMedicineProps, any>
             backgroundColor: PRIMARY_COLOR,
             borderRadius: 2,
           }} />
+        </View>
+        <View style={{
+          alignItems: 'center',
+          justifyContent: 'center',
+          marginTop: 12
+        }}>
+          <Text style={{
+            color: 'black',
+            fontSize: 18,
 
+          }}>
+            {this.props.medicine.name}
+          </Text>
+
+          <View style={{
+            flexDirection: 'row'
+          }}>
+            <Image source={this.props.img} />
+          </View>
         </View>
       </View>
     )

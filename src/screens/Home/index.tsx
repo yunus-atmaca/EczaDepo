@@ -11,7 +11,7 @@ function index({ navigation, route }) {
 
   useEffect(() => {
     const routeName = getFocusedRouteNameFromRoute(route);
-    console.debug(routeName)
+    //console.debug(routeName)
     if (routeName === 'Home' || routeName === undefined) {
       navigation.setOptions({ tabBarVisible: true })
     } else {

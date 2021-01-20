@@ -41,7 +41,7 @@ class DosesAndStores extends React.Component<DosesAndStoresProps, any> {
         style={{
           paddingHorizontal: 18,
           paddingVertical: 12,
-          justifyContent: 'center'
+          justifyContent: 'center',
         }}
         ref={(ref) => this.ref = ref}
         transition={transition}>
@@ -73,7 +73,9 @@ class DosesAndStores extends React.Component<DosesAndStoresProps, any> {
                   textTransform: 'uppercase',
                 }}>{this.props.stores[this.state.selectedStoreIndex].storeName}</Text>
               </View>
-              <MaterialIcons name={'keyboard-arrow-down'} color='black' size={28} />
+              <MaterialIcons name={'keyboard-arrow-down'}
+                color={this.props.stores.length > 1 ? 'black' : 'transparent'}
+                size={28} />
             </View>
             <View style={{
               backgroundColor: COLOR_ON_PRIMARY,
@@ -82,6 +84,7 @@ class DosesAndStores extends React.Component<DosesAndStoresProps, any> {
               marginTop: 4
             }} />
             {
+              this.props.stores.length > 1 &&
               this.state.currentSection === 'stores' && (
                 <View style={{ marginTop: 16, }}>
                   {
